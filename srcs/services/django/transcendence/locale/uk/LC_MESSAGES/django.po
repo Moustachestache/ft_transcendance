@@ -1,0 +1,899 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-13 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != "
+"11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % "
+"100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || "
+"(n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: api/models.py:113
+msgid "anonymous"
+msgstr "анонімний"
+
+#: api/viewsAPI.py:26
+msgid "Error please use POST method"
+msgstr "Помилка, будь ласка, використовуйте метод POST"
+
+#: api/viewsAPI.py:42
+msgid "no data for query "
+msgstr "немає даних для запиту"
+
+#: api/viewsAPI.py:52 api/viewsAPI.py:87 api/viewsAPI.py:115
+#: api/viewsAPI.py:165 api/viewsAPI.py:213
+msgid "Error please use GET method."
+msgstr "Помилка, будь ласка, використовуйте метод GET."
+
+#: api/viewsAPI.py:56 api/viewsAPI.py:91 api/viewsAPI.py:169
+#: api/viewsAPI.py:216
+msgid "Error you must be logged in."
+msgstr "Помилка, ви повинні увійти в систему."
+
+#: api/viewsAPI.py:62
+msgid "Error the user do not exist."
+msgstr "Помилка, користувача не існує."
+
+#: api/viewsAPI.py:69 api/viewsAPI.py:73 api/viewsAPI.py:126
+#: api/viewsAPI.py:153 api/viewsAPI.py:203
+msgid "Error please set valid offset and size."
+msgstr "Помилка, будь ласка, вкажіть правильні offset та size."
+
+#: api/viewsAPI.py:104
+msgid "Unable to retrieve user data."
+msgstr "Не вдалося отримати дані користувача."
+
+#: api/viewsAPI.py:119 api/viewsAPI.py:173
+msgid "Error please set offset and size."
+msgstr "Помилка, будь ласка, вкажіть offset та size."
+
+#: api/viewsAPI.py:219
+msgid "Error please set the matchId."
+msgstr "Помилка, будь ласка, вкажіть matchId."
+
+#: api/viewsAPI.py:224 api/viewsAPI.py:250
+msgid "Error match not found."
+msgstr "Помилка, матч не знайдено."
+
+#: api/viewsAPI.py:238 api/viewsAPI.py:239
+#: frontend/templates/frontend/displayTournament.html:38
+#: frontend/templates/frontend/displayTournament.html:48
+#: frontend/templates/frontend/displayTournament.html:60
+#: frontend/templates/frontend/displayTournament.html:70
+msgid "Anonymous"
+msgstr "Анонім"
+
+#: api/viewsUserManagement.py:37
+msgid "User is already logged in."
+msgstr "Користувач вже увійшов у систему."
+
+#: api/viewsUserManagement.py:44 api/viewsUserManagement.py:49
+#: api/viewsUserManagement.py:54
+msgid "Error wrong email or password."
+msgstr "Помилка, неправильна електронна пошта або пароль."
+
+#: api/viewsUserManagement.py:71
+msgid ""
+"UserData is borked or database is offline, this is not supposed to happen."
+msgstr ""
+"Дані користувача пошкоджені або база даних не працює. Це не повинно "
+"траплятися."
+
+#: api/viewsUserManagement.py:75
+msgid "Error you are not logged in."
+msgstr "Помилка, ви не увійшли в систему."
+
+#: api/viewsUserManagement.py:79
+msgid "Error you must use the POST or GET method."
+msgstr "Помилка, потрібно використовувати метод POST або GET."
+
+#: api/viewsUserManagement.py:93
+msgid "Error please add an username."
+msgstr "Помилка, будь ласка, введіть ім’я користувача."
+
+#: api/viewsUserManagement.py:96 api/viewsUserManagement.py:232
+msgid "Error the username can't contain whitespaces."
+msgstr "Помилка, ім’я користувача не може містити пробіли."
+
+#: api/viewsUserManagement.py:99 api/viewsUserManagement.py:236
+msgid "Error the username is too long. The maximum length is 30 characters."
+msgstr ""
+"Помилка, ім’я користувача занадто довге. Максимальна довжина — 30 символів."
+
+#: api/viewsUserManagement.py:106
+msgid "Error passwords diff."
+msgstr "Помилка, паролі не збігаються."
+
+#: api/viewsUserManagement.py:123
+msgid "Error this email is already taken."
+msgstr "Помилка, ця електронна адреса вже використовується."
+
+#: api/viewsUserManagement.py:140
+msgid "Error while creating new user."
+msgstr "Помилка під час створення нового користувача."
+
+#: api/viewsUserManagement.py:146
+msgid "Error you must POST the register form."
+msgstr "Помилка, необхідно надіслати форму реєстрації через POST."
+
+#: api/viewsUserManagement.py:154
+msgid "?error=Error invalid request method."
+msgstr "?error=Помилка, неправильний метод запиту."
+
+#: api/viewsUserManagement.py:157
+msgid "?error=Error you must be redirected by the 42 api."
+msgstr "?error=Помилка, вас повинно було перенаправити через API 42."
+
+#: api/viewsUserManagement.py:168
+msgid "?error=1Error while connecting to the 42 api."
+msgstr "?error=1Помилка під час підключення до API 42."
+
+#: api/viewsUserManagement.py:172
+msgid "?error=Error handshake with the 42 api failed."
+msgstr "?error=Помилка, не вдалося встановити з'єднання з API 42."
+
+#: api/viewsUserManagement.py:177
+msgid "?error=2Error while connecting to the 42 api."
+msgstr "?error=2Помилка під час підключення до API 42."
+
+#: api/viewsUserManagement.py:181
+msgid "?error=Error while fetching infos from the 42 api."
+msgstr "?error=Помилка при отриманні інформації з API 42."
+
+#: api/viewsUserManagement.py:188
+msgid "Error your email is already linked to another account without 42 OAuth."
+msgstr ""
+"Помилка, ваша електронна адреса вже прив’язана до іншого облікового запису "
+"без 42 OAuth."
+
+#: api/viewsUserManagement.py:200
+msgid "User in not logged."
+msgstr "Користувач не увійшов у систему."
+
+#: api/viewsUserManagement.py:204
+msgid "User successfully logged out."
+msgstr "Користувач успішно вийшов із системи."
+
+#: api/viewsUserManagement.py:216
+msgid "Error you must be logged in to modify your profile."
+msgstr "Помилка, ви повинні увійти в систему, щоб змінити профіль."
+
+#: api/viewsUserManagement.py:220 api/viewsUserManagement.py:267
+#: api/viewsUserManagement.py:312 api/viewsUserManagement.py:361
+#: api/viewsUserManagement.py:397
+msgid "Error you must use the POST method."
+msgstr "Помилка, необхідно використовувати метод POST."
+
+#: api/viewsUserManagement.py:228
+msgid "Error please enter a valid username."
+msgstr "Помилка, будь ласка, введіть правильне ім’я користувача."
+
+#: api/viewsUserManagement.py:263
+msgid "Error you must be logged in to delete your profile lol."
+msgstr "Помилка, ви повинні увійти в систему, щоб видалити свій профіль, лол."
+
+#: api/viewsUserManagement.py:273
+msgid "Error please enter your username."
+msgstr "Помилка, будь ласка, введіть своє ім’я користувача."
+
+#: api/viewsUserManagement.py:277
+msgid "Error wrong username."
+msgstr "Помилка, неправильне ім’я користувача."
+
+#: api/viewsUserManagement.py:286
+msgid "Error cannot delete user involved in a tournament in-progress."
+msgstr "Помилка, неможливо видалити користувача, який бере участь у турнірі."
+
+#: api/viewsUserManagement.py:292
+#, python-brace-format
+msgid "Error while deleting the user please retry later. {e}"
+msgstr ""
+"Помилка під час видалення користувача, будь ласка, спробуйте пізніше. {e}"
+
+#: api/viewsUserManagement.py:295
+msgid ""
+"User successfully deleted. You will be redirected to the main page in 3 "
+"seconds."
+msgstr ""
+"Користувача успішно видалено. Ви будете перенаправлені на головну сторінку "
+"через 3 секунди."
+
+#: api/viewsUserManagement.py:308 api/viewsUserManagement.py:357
+#: api/viewsUserManagement.py:393
+msgid "Error you must be logged in to send a friend request."
+msgstr "Помилка, ви повинні увійти в систему, щоб надіслати запит на дружбу."
+
+#: api/viewsUserManagement.py:318 api/viewsUserManagement.py:323
+#: api/viewsUserManagement.py:367 api/viewsUserManagement.py:372
+#: api/viewsUserManagement.py:403 api/viewsUserManagement.py:408
+msgid "Error wrong user Id provided."
+msgstr "Помилка, вказано неправильний ID користувача."
+
+#: api/viewsUserManagement.py:329
+msgid "Error you are already friend with this person."
+msgstr "Помилка, ви вже є друзями з цією особою."
+
+#: api/viewsUserManagement.py:333
+msgid "Error you already have sent a request to this person."
+msgstr "Помилка, ви вже надіслали запит цій особі."
+
+#: api/viewsUserManagement.py:341
+msgid "Friend successfully added."
+msgstr "Друга успішно додано."
+
+#: api/viewsUserManagement.py:346
+msgid "Friend request has been sent."
+msgstr "Запит на дружбу надіслано."
+
+#: api/viewsUserManagement.py:350
+msgid "Error during friendship request, please retry later."
+msgstr "Помилка під час запиту на дружбу, будь ласка, спробуйте пізніше."
+
+#: api/viewsUserManagement.py:377
+msgid "Error friend request not found."
+msgstr "Помилка, запит на дружбу не знайдено."
+
+#: api/viewsUserManagement.py:381
+msgid "Friend request successfully deleted."
+msgstr "Запит на дружбу успішно видалено."
+
+#: api/viewsUserManagement.py:385
+msgid "Error unable to remove the friend request please retry later."
+msgstr ""
+"Помилка, не вдалося видалити запит на дружбу. Будь ласка, спробуйте пізніше."
+
+#: api/viewsUserManagement.py:415
+msgid "Error you are not friend with them."
+msgstr "Помилка, ви не є друзями з цією особою."
+
+#: api/viewsUserManagement.py:419
+msgid "Friendship successfully deleted."
+msgstr "Дружбу успішно скасовано."
+
+#: api/viewsUserManagement.py:423
+#, python-brace-format
+msgid "Error unable to remove friendship please retry later. {e}"
+msgstr ""
+"Помилка, не вдалося скасувати дружбу. Будь ласка, спробуйте пізніше. {e}"
+
+#: frontend/templates/frontend/baseTemplate.html:13
+msgid "pong with frenemies"
+msgstr "понг з недругами"
+
+#: frontend/templates/frontend/baseTemplate.html:29
+msgid "search"
+msgstr "пошук"
+
+#: frontend/templates/frontend/baseTemplate.html:38
+msgid "play"
+msgstr "грати"
+
+#: frontend/templates/frontend/baseTemplate.html:41
+#: frontend/templates/frontend/ladder.html:4
+msgid "ladder"
+msgstr "рейтинг"
+
+#: frontend/templates/frontend/baseTemplate.html:44
+msgid "tournament"
+msgstr "турнір"
+
+#: frontend/templates/frontend/baseTemplate.html:47
+msgid "profile"
+msgstr "профіль"
+
+#: frontend/templates/frontend/baseTemplate.html:50
+msgid "friend"
+msgstr "друг"
+
+#: frontend/templates/frontend/baseTemplate.html:53
+msgid "logout"
+msgstr "вийти"
+
+#: frontend/templates/frontend/baseTemplate.html:62
+#: frontend/templates/frontend/register.html:64
+msgid "register"
+msgstr "реєстрація"
+
+#: frontend/templates/frontend/baseTemplate.html:65
+#: frontend/templates/frontend/login.html:20
+msgid "login"
+msgstr "вхід"
+
+#: frontend/templates/frontend/baseTemplate.html:113
+msgid "GDPR contact"
+msgstr "Контакт GDPR"
+
+#: frontend/templates/frontend/baseTemplate.html:129
+msgid "Cookies policy"
+msgstr "Політика використання файлів cookie"
+
+#: frontend/templates/frontend/baseTemplate.html:130
+msgid ""
+"We use a single, essential cookie on this site that serves as a connection "
+"token to maintain your session. By clicking Accept, you acknowledge and "
+"consent to this cookie being stored in your browser."
+msgstr ""
+"Ми використовуємо один необхідний файл cookie на цьому сайті, який слугує "
+"токеном підключення для підтримки вашої сесії. Натискаючи «Прийняти», ви "
+"погоджуєтесь на зберігання цього файлу cookie у вашому браузері."
+
+#: frontend/templates/frontend/baseTemplate.html:131
+msgid ""
+"For a popup-free browsing experience, you can permanently remove this notice "
+"by registering an account and accepting our Terms of Service."
+msgstr ""
+"Щоб переглядати сайт без спливаючих вікон, ви можете назавжди прибрати це "
+"повідомлення, зареєструвавши обліковий запис і прийнявши наші Умови надання "
+"послуг."
+
+#: frontend/templates/frontend/baseTemplate.html:133
+msgid "Accept"
+msgstr "Прийняти"
+
+#: frontend/templates/frontend/createTournament.html:12
+msgid "Tournament creation:"
+msgstr "Створення турніру:"
+
+#: frontend/templates/frontend/createTournament.html:17
+msgid "Tournament Name"
+msgstr "Назва турніру"
+
+#: frontend/templates/frontend/createTournament.html:18
+#, python-format
+msgid "%(username)s's tournament"
+msgstr "Турнір %(username)s"
+
+#: frontend/templates/frontend/createTournament.html:19
+msgid "Add a tournament name"
+msgstr "Додайте назву турніру"
+
+#: frontend/templates/frontend/createTournament.html:27
+msgid "Auto register to the Tournament ?"
+msgstr "Автоматично зареєструватися в турнірі?"
+
+#: frontend/templates/frontend/createTournament.html:34
+msgid "Create Tournament"
+msgstr "Створити турнір"
+
+#: frontend/templates/frontend/displayTournament.html:12
+msgid "Go back"
+msgstr "Назад"
+
+#: frontend/templates/frontend/displayTournament.html:19
+msgid "Delete tournament"
+msgstr "Видалити турнір"
+
+#: frontend/templates/frontend/displayTournament.html:25
+msgid "Created by "
+msgstr "Створено "
+
+#: frontend/templates/frontend/displayTournament.html:27
+msgid "The winner is: "
+msgstr "Переможець: "
+
+#: frontend/templates/frontend/displayTournament.html:34
+#: frontend/templates/frontend/displayTournament.html:44
+#: frontend/templates/frontend/displayTournament.html:56
+#: frontend/templates/frontend/displayTournament.html:66
+msgid "Slot"
+msgstr "Слот"
+
+#: frontend/templates/frontend/displayTournament.html:40
+#: frontend/templates/frontend/displayTournament.html:50
+#: frontend/templates/frontend/displayTournament.html:62
+#: frontend/templates/frontend/displayTournament.html:72
+msgid "Register"
+msgstr "Зареєструватися"
+
+#: frontend/templates/frontend/displayTournament.html:82
+msgid "Start Tournament"
+msgstr "Почати турнір"
+
+#: frontend/templates/frontend/displayTournament.html:90
+msgid "Tournament is started, you can queue for the tournament in the "
+msgstr "Турнір розпочато, ви можете стати в чергу на турнір у розділі "
+
+#: frontend/templates/frontend/displayTournament.html:91
+msgid "Play"
+msgstr "Грати"
+
+#: frontend/templates/frontend/displayTournament.html:92
+msgid "page."
+msgstr "сторінка."
+
+#: frontend/templates/frontend/displayTournament.html:97
+msgid "Matches:"
+msgstr "Матчі:"
+
+#: frontend/templates/frontend/displayTournament.html:107
+#: frontend/templates/frontend/profile.html:93
+msgid "Date"
+msgstr "Дата"
+
+#: frontend/templates/frontend/displayTournament.html:108
+msgid "Player 1"
+msgstr "Гравець 1"
+
+#: frontend/templates/frontend/displayTournament.html:109
+msgid "Scores"
+msgstr "Рахунок"
+
+#: frontend/templates/frontend/displayTournament.html:110
+msgid "Player 2"
+msgstr "Гравець 2"
+
+#: frontend/templates/frontend/displayTournament.html:111
+msgid "Winner"
+msgstr "Переможець"
+
+#: frontend/templates/frontend/displayTournament.html:124
+msgid "No match found."
+msgstr "Матчів не знайдено."
+
+#: frontend/templates/frontend/displayTournament.html:130
+msgid ""
+"Unable to display matches when a user from a tournament has been deleted ."
+msgstr "Неможливо відобразити матчі, якщо користувача з турніру було видалено."
+
+#: frontend/templates/frontend/displayTournament.html:133
+msgid "Unable to retrive tournament data."
+msgstr "Не вдалося отримати дані турніру."
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:3
+msgid "oops"
+msgstr "ой"
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:4
+msgid "log-in to access this page"
+msgstr "увійдіть, щоб отримати доступ до цієї сторінки"
+
+#: frontend/templates/frontend/friend.html:12
+msgid "Online"
+msgstr "Онлайн"
+
+#: frontend/templates/frontend/friend.html:15
+msgid "All"
+msgstr "Усі"
+
+#: frontend/templates/frontend/friend.html:18
+msgid "Pending"
+msgstr "Очікується"
+
+#: frontend/templates/frontend/friend.html:36
+#: frontend/templates/frontend/profile.html:31
+msgid "Cancel Request"
+msgstr "Скасувати запит"
+
+#: frontend/templates/frontend/friend.html:40
+#: frontend/templates/frontend/profile.html:40
+msgid "Accept Request"
+msgstr "Прийняти запит"
+
+#: frontend/templates/frontend/friend.html:67
+#: frontend/templates/frontend/profile.html:22
+msgid "Remove Friend"
+msgstr "Видалити друга"
+
+#: frontend/templates/frontend/friend.html:72
+msgid "Kinda empty here..."
+msgstr "Тут якось порожньо..."
+
+#: frontend/templates/frontend/home.html:6
+msgid "news"
+msgstr "новини"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Position"
+msgstr "Позиція в рейтингу"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Pos"
+msgstr "Поз."
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Avatar"
+msgstr "Аватар"
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Ava."
+msgstr "Ава."
+
+#: frontend/templates/frontend/ladder.html:10
+msgid "Name"
+msgstr "Ім'я"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Played"
+msgstr "Грав"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Pl"
+msgstr "І"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "Won"
+msgstr "виграти"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "W"
+msgstr "В"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "Lost"
+msgstr "втрачено"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "L"
+msgstr "П"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "Goals For"
+msgstr "голів для"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "GF"
+msgstr "ЗМ"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "Goals Against"
+msgstr "голів проти"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "GA"
+msgstr "РМ"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "Goals Difference"
+msgstr "різниця м'ячів"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "GD"
+msgstr "ПМ"
+
+#: frontend/templates/frontend/login.html:8
+msgid "E-mail"
+msgstr "Електронна пошта"
+
+#: frontend/templates/frontend/login.html:10
+msgid "enter your email"
+msgstr "введіть свою електронну пошту"
+
+#: frontend/templates/frontend/login.html:13
+#: frontend/templates/frontend/register.html:22
+#: frontend/templates/frontend/updateProfile.html:48
+msgid "Password"
+msgstr "Пароль"
+
+#: frontend/templates/frontend/login.html:15
+msgid "enter your password"
+msgstr "введіть свій пароль"
+
+#: frontend/templates/frontend/login.html:22
+msgid "login with"
+msgstr "увійти за допомогою"
+
+#: frontend/templates/frontend/login.html:26
+#: frontend/templates/frontend/register.html:75
+msgid "reset"
+msgstr "скинути"
+
+#: frontend/templates/frontend/match.html:20
+msgid "Player 1 not available"
+msgstr "Гравець 1 недоступний"
+
+#: frontend/templates/frontend/match.html:25
+#: frontend/templates/frontend/match.html:48
+#: frontend/templates/frontend/profile.html:67
+msgid "Score"
+msgstr "Рахунок"
+
+#: frontend/templates/frontend/match.html:44
+msgid "Player 2 not available"
+msgstr "Гравець 2 недоступний"
+
+#: frontend/templates/frontend/match.html:55
+msgid " has won !"
+msgstr " переміг!"
+
+#: frontend/templates/frontend/match.html:69
+msgid "Unable to retrieve match data"
+msgstr "Не вдалося отримати дані матчу"
+
+#: frontend/templates/frontend/play.html:43
+msgid "Freeplay"
+msgstr "грати"
+
+#: frontend/templates/frontend/play.html:48
+msgid "Show tournaments"
+msgstr "турнір"
+
+#: frontend/templates/frontend/play.html:66
+#: frontend/templates/frontend/tournament.html:30
+msgid "Created by: "
+msgstr "Створено: "
+
+#: frontend/templates/frontend/play.html:68
+msgid "Enter tournament queue"
+msgstr "Увійти до черги турніру"
+
+#: frontend/templates/frontend/play.html:73
+msgid "There are no tournaments available."
+msgstr "Наразі турніри недоступні."
+
+#: frontend/templates/frontend/profile.html:11
+#, python-format
+msgid "%(username)s's Profile"
+msgstr "Профіль користувача %(username)s"
+
+#: frontend/templates/frontend/profile.html:15
+#: frontend/templates/frontend/updateProfile.html:12
+msgid "Edit Profile"
+msgstr "Редагувати профіль"
+
+#: frontend/templates/frontend/profile.html:49
+msgid "Add Friend"
+msgstr "Додати друга"
+
+#: frontend/templates/frontend/profile.html:64
+msgid "Statistics"
+msgstr "Статистика"
+
+#: frontend/templates/frontend/profile.html:71
+msgid "Total matches"
+msgstr "Усього матчів"
+
+#: frontend/templates/frontend/profile.html:75
+msgid "Win rate"
+msgstr "Коефіцієнт перемог"
+
+#: frontend/templates/frontend/profile.html:79
+msgid "Ladder position"
+msgstr "Позиція в рейтингу"
+
+#: frontend/templates/frontend/profile.html:86
+msgid "Recent Matches"
+msgstr "Останні матчі"
+
+#: frontend/templates/frontend/profile.html:94
+msgid "Opponent"
+msgstr "Суперник"
+
+#: frontend/templates/frontend/profile.html:95
+msgid "Your Score"
+msgstr "Ваш рахунок"
+
+#: frontend/templates/frontend/profile.html:96
+msgid "Opponent's Score"
+msgstr "Рахунок суперника"
+
+#: frontend/templates/frontend/profile.html:97
+msgid "Result"
+msgstr "Результат"
+
+#: frontend/templates/frontend/profile.html:109
+#: frontend/templates/frontend/profile.html:115
+msgid "Anon"
+msgstr "Анонім"
+
+#: frontend/templates/frontend/profile.html:135
+msgid "Win"
+msgstr "Перемога"
+
+#: frontend/templates/frontend/profile.html:137
+msgid "Loss"
+msgstr "Поразка"
+
+#: frontend/templates/frontend/profile.html:143
+msgid "No recent matches found"
+msgstr "Останні матчі не знайдені"
+
+#: frontend/templates/frontend/register.html:8
+msgid "Account information"
+msgstr "Інформація про обліковий запис"
+
+#: frontend/templates/frontend/register.html:10
+#: frontend/templates/frontend/updateProfile.html:34
+#: frontend/templates/frontend/updateProfile.html:87
+msgid "Username"
+msgstr "Ім’я користувача"
+
+#: frontend/templates/frontend/register.html:12
+msgid "Chose your username"
+msgstr "Оберіть ім’я користувача"
+
+#: frontend/templates/frontend/register.html:15
+#: frontend/templates/frontend/updateProfile.html:39
+msgid "Email"
+msgstr "Електронна пошта"
+
+#: frontend/templates/frontend/register.html:17
+msgid "Input your Email"
+msgstr "Введіть електронну пошту"
+
+#: frontend/templates/frontend/register.html:24
+msgid "Input your password"
+msgstr "Введіть пароль"
+
+#: frontend/templates/frontend/register.html:27
+#: frontend/templates/frontend/register.html:29
+msgid "Verify your password"
+msgstr "Підтвердіть пароль"
+
+#: frontend/templates/frontend/register.html:35
+#: frontend/templates/frontend/updateProfile.html:26
+msgid "Profile picture"
+msgstr "Зображення профілю"
+
+#: frontend/templates/frontend/register.html:37
+#: frontend/templates/frontend/updateProfile.html:28
+msgid "Allowed formats: png, jpeg, jpg and gif"
+msgstr "Допустимі формати: png, jpeg, jpg і gif"
+
+#: frontend/templates/frontend/register.html:41
+msgid "Terms of Service (TOS)"
+msgstr "Умови надання послуг (TOS)"
+
+#: frontend/templates/frontend/register.html:58
+msgid "I accept the terms of service"
+msgstr "Я приймаю умови надання послуг"
+
+#: frontend/templates/frontend/register.html:68
+msgid "register with"
+msgstr "зареєструватися через"
+
+#: frontend/templates/frontend/register.html:72
+msgid "populate"
+msgstr "заповнити"
+
+#: frontend/templates/frontend/tournament.html:12
+msgid "Opened"
+msgstr "Відкрито"
+
+#: frontend/templates/frontend/tournament.html:15
+msgid "In progress"
+msgstr "У процесі"
+
+#: frontend/templates/frontend/tournament.html:18
+msgid "Closed"
+msgstr "Закрито"
+
+#: frontend/templates/frontend/tournament.html:21
+msgid "Create a tournament"
+msgstr "Створити турнір"
+
+#: frontend/templates/frontend/tournament.html:33
+msgid "closed"
+msgstr "закрито"
+
+#: frontend/templates/frontend/tournament.html:35
+msgid "in progress"
+msgstr "триває"
+
+#: frontend/templates/frontend/tournament.html:37
+msgid "full"
+msgstr "заповнено"
+
+#: frontend/templates/frontend/tournament.html:39
+msgid " left"
+msgstr " залишилось"
+
+#: frontend/templates/frontend/tournament.html:46
+msgid "No tournament found."
+msgstr "Турнірів не знайдено."
+
+#: frontend/templates/frontend/updateProfile.html:15
+msgid "Go Back To Profile"
+msgstr "Повернутися до профілю"
+
+#: frontend/templates/frontend/updateProfile.html:36
+msgid "Change your username"
+msgstr "Змінити ім’я користувача"
+
+#: frontend/templates/frontend/updateProfile.html:41
+msgid "You can't change the email"
+msgstr "Ви не можете змінити електронну пошту"
+
+#: frontend/templates/frontend/updateProfile.html:50
+msgid "New password"
+msgstr "Новий пароль"
+
+#: frontend/templates/frontend/updateProfile.html:53
+msgid "Confirm password"
+msgstr "Підтвердьте пароль"
+
+#: frontend/templates/frontend/updateProfile.html:55
+msgid "Confirm new password"
+msgstr "Підтвердіть новий пароль"
+
+#: frontend/templates/frontend/updateProfile.html:61
+msgid "Update"
+msgstr "Оновити"
+
+#: frontend/templates/frontend/updateProfile.html:67
+msgid "Delete Profile"
+msgstr "Видалити профіль"
+
+#: frontend/templates/frontend/updateProfile.html:79
+msgid "Warning !"
+msgstr "Увага!"
+
+#: frontend/templates/frontend/updateProfile.html:83
+msgid "This action will delete all your user profile forever !"
+msgstr "Ця дія назавжди видалить ваш профіль користувача!"
+
+#: frontend/templates/frontend/updateProfile.html:86
+msgid ""
+"If you want to proced write your username below then click Delete my profile"
+msgstr ""
+"Щоб продовжити, введіть ваше ім’я користувача нижче та натисніть «Видалити "
+"мій профіль»"
+
+#: frontend/templates/frontend/updateProfile.html:92
+msgid "Close"
+msgstr "Закрити"
+
+#: frontend/templates/frontend/updateProfile.html:93
+msgid "Delete my profile"
+msgstr "Видалити мій профіль"
+
+#: frontend/templates/frontend/updateProfile.html:100
+msgid "Error"
+msgstr "Помилка"
+
+#: transcendence/settings.py:160
+msgid "english"
+msgstr "англійська"
+
+#: transcendence/settings.py:161
+msgid " 𓍑𓃏𓏎𓂝𓉣"
+msgstr "𓍑𓃏𓏎𓂝𓉣"
+
+# Keep as-is, no translation needed
+#: transcendence/settings.py:162
+msgid "українська"
+msgstr "українська"
+
+#: transcendence/settings.py:163
+msgid "français"
+msgstr "французька"
+
+#: transcendence/settings.py:164
+msgid "ქართველი"
+msgstr "грузинська"
+
+#: websocket/gameLoop.py:293
+msgid "Match is starting get ready !"
+msgstr "Матч починається — готуйтеся!"
+
+#: websocket/tournamentLoop.py:188
+msgid "Tournament is starting get ready !"
+msgstr "Турнір починається — готуйтеся!"
+
+#: websocket/tournamentLoop.py:196
+msgid "A player has left the tournament."
+msgstr "Гравець покинув турнір."
+
+#: websocket/tournamentLoop.py:202
+msgid "The two finalists are: "
+msgstr "Фіналісти: "
+
+#: websocket/tournamentLoop.py:212
+msgid "Too many players have left the tournament, no one have won."
+msgstr "Занадто багато гравців покинули турнір — переможця немає."
+
+#: websocket/tournamentLoop.py:218
+msgid "The tournament winner is: "
+msgstr "Переможець турніру: "

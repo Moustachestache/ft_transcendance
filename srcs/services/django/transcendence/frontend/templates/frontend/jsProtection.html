@@ -1,0 +1,16 @@
+<script>
+    try
+    {
+        user;
+    } 
+    catch(e) 
+    {
+        //  moche, mais trim() ne trim que les whitespaces MDR !???
+        let pathArg = window.location.pathname.split("/");
+        window.location.replace(
+            window.location.origin 
+            + "/#!" 
+            + pathArg[1]
+        );  
+    }
+</script>

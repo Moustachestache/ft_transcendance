@@ -1,0 +1,875 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-13 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: api/models.py:113
+msgid "anonymous"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsAPI.py:26
+msgid "Error please use POST method"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:42
+msgid "no data for query "
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsAPI.py:52 api/viewsAPI.py:87 api/viewsAPI.py:115
+#: api/viewsAPI.py:165 api/viewsAPI.py:213
+msgid "Error please use GET method."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:56 api/viewsAPI.py:91 api/viewsAPI.py:169
+#: api/viewsAPI.py:216
+msgid "Error you must be logged in."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:62
+msgid "Error the user do not exist."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsAPI.py:69 api/viewsAPI.py:73 api/viewsAPI.py:126
+#: api/viewsAPI.py:153 api/viewsAPI.py:203
+msgid "Error please set valid offset and size."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:104
+msgid "Unable to retrieve user data."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsAPI.py:119 api/viewsAPI.py:173
+msgid "Error please set offset and size."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:219
+msgid "Error please set the matchId."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsAPI.py:224 api/viewsAPI.py:250
+msgid "Error match not found."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsAPI.py:238 api/viewsAPI.py:239
+#: frontend/templates/frontend/displayTournament.html:38
+#: frontend/templates/frontend/displayTournament.html:48
+#: frontend/templates/frontend/displayTournament.html:60
+#: frontend/templates/frontend/displayTournament.html:70
+msgid "Anonymous"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:37
+msgid "User is already logged in."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:44 api/viewsUserManagement.py:49
+#: api/viewsUserManagement.py:54
+msgid "Error wrong email or password."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:71
+msgid ""
+"UserData is borked or database is offline, this is not supposed to happen."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:75
+msgid "Error you are not logged in."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:79
+msgid "Error you must use the POST or GET method."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:93
+msgid "Error please add an username."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:96 api/viewsUserManagement.py:232
+msgid "Error the username can't contain whitespaces."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:99 api/viewsUserManagement.py:236
+msgid "Error the username is too long. The maximum length is 30 characters."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:106
+msgid "Error passwords diff."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:123
+msgid "Error this email is already taken."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:140
+msgid "Error while creating new user."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:146
+msgid "Error you must POST the register form."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:154
+msgid "?error=Error invalid request method."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:157
+msgid "?error=Error you must be redirected by the 42 api."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:168
+msgid "?error=1Error while connecting to the 42 api."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:172
+msgid "?error=Error handshake with the 42 api failed."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:177
+msgid "?error=2Error while connecting to the 42 api."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:181
+msgid "?error=Error while fetching infos from the 42 api."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:188
+msgid "Error your email is already linked to another account without 42 OAuth."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:200
+msgid "User in not logged."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:204
+msgid "User successfully logged out."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:216
+msgid "Error you must be logged in to modify your profile."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:220 api/viewsUserManagement.py:267
+#: api/viewsUserManagement.py:312 api/viewsUserManagement.py:361
+#: api/viewsUserManagement.py:397
+msgid "Error you must use the POST method."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:228
+msgid "Error please enter a valid username."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:263
+msgid "Error you must be logged in to delete your profile lol."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:273
+msgid "Error please enter your username."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:277
+msgid "Error wrong username."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:286
+msgid "Error cannot delete user involved in a tournament in-progress."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:292
+#, python-brace-format
+msgid "Error while deleting the user please retry later. {e}"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇 {e}"
+
+#: api/viewsUserManagement.py:295
+msgid ""
+"User successfully deleted. You will be redirected to the main page in 3 "
+"seconds."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:308 api/viewsUserManagement.py:357
+#: api/viewsUserManagement.py:393
+msgid "Error you must be logged in to send a friend request."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:318 api/viewsUserManagement.py:323
+#: api/viewsUserManagement.py:367 api/viewsUserManagement.py:372
+#: api/viewsUserManagement.py:403 api/viewsUserManagement.py:408
+msgid "Error wrong user Id provided."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇"
+
+#: api/viewsUserManagement.py:329
+msgid "Error you are already friend with this person."
+msgstr "𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋"
+
+#: api/viewsUserManagement.py:333
+msgid "Error you already have sent a request to this person."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓏏𓇋𓇇 𓇋𓇏𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇 𓇋𓇏𓇋𓇛𓏴𓇇"
+
+#: api/viewsUserManagement.py:341
+msgid "Friend successfully added."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓏴𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇛𓏴𓇇"
+
+#: api/viewsUserManagement.py:346
+msgid "Friend request has been sent."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇋𓇛𓏴𓇇 𓇋𓇏𓇇𓋴𓇋𓇏"
+
+#: api/viewsUserManagement.py:350
+msgid "Error during friendship request, please retry later."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓋴𓇋𓇏, 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏"
+
+#: api/viewsUserManagement.py:377
+msgid "Error friend request not found."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇇𓇋𓇛𓏴𓇇"
+
+#: api/viewsUserManagement.py:381
+msgid "Friend request successfully deleted."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇛𓏴𓇇"
+
+#: api/viewsUserManagement.py:385
+msgid "Error unable to remove the friend request please retry later."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇛𓏴𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤"
+
+#: api/viewsUserManagement.py:415
+msgid "Error you are not friend with them."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇇𓇋𓇏"
+
+#: api/viewsUserManagement.py:419
+msgid "Friendship successfully deleted."
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇛𓏴𓇇"
+
+#: api/viewsUserManagement.py:423
+#, python-brace-format
+msgid "Error unable to remove friendship please retry later. {e}"
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇋𓇇𓇋𓇏𓏤 𓇋𓇏𓇇𓇋𓇛𓏴𓇇 𓇋𓇏𓇇𓇋𓇇𓇋𓇏𓏤. {e}"
+
+#: frontend/templates/frontend/baseTemplate.html:13
+msgid "pong with frenemies"
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏 𓇋𓇏𓇇𓇋𓇏𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:29
+msgid "search"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇋𓇏"
+
+#: frontend/templates/frontend/baseTemplate.html:38
+msgid "play"
+msgstr "𓇋𓇏𓇇𓇋𓇏𓇋𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:41
+#: frontend/templates/frontend/ladder.html:4
+msgid "ladder"
+msgstr "𓇋𓇏𓇋𓋴𓇋𓇏𓇇𓇋𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:44
+msgid "tournament"
+msgstr "𓇋𓇏𓇋𓇛𓇋𓇏𓇏𓏴𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:47
+msgid "profile"
+msgstr "𓇋𓇏𓇋𓇏𓋭𓇏𓇋𓇏"
+
+#: frontend/templates/frontend/baseTemplate.html:50
+msgid "friend"
+msgstr "𓇋𓇏𓇋𓇏𓋭𓇏𓇋𓇏"
+
+#: frontend/templates/frontend/baseTemplate.html:53
+msgid "logout"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:62
+#: frontend/templates/frontend/register.html:64
+msgid "register"
+msgstr "𓇋𓇏𓇇𓇋𓇏𓇋𓇏"
+
+#: frontend/templates/frontend/baseTemplate.html:65
+#: frontend/templates/frontend/login.html:20
+msgid "login"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇋𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:113
+msgid "GDPR contact"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:129
+msgid "Cookies policy"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:130
+msgid ""
+"We use a single, essential cookie on this site that serves as a connection "
+"token to maintain your session. By clicking Accept, you acknowledge and "
+"consent to this cookie being stored in your browser."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇𓇇𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇𓇋𓇏𓇋𓇇𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:131
+msgid ""
+"For a popup-free browsing experience, you can permanently remove this notice "
+"by registering an account and accepting our Terms of Service."
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇𓇇𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇𓇋𓇏𓇋𓇇𓇇 𓇋𓇏𓇋𓇇𓇋𓇏𓇇𓇋𓇏𓇋𓇇"
+
+#: frontend/templates/frontend/baseTemplate.html:133
+msgid "Accept"
+msgstr "𓇋𓇏𓇋𓇇𓇋𓇏𓇇"
+
+#: frontend/templates/frontend/createTournament.html:12
+msgid "Tournament creation:"
+msgstr "𓏏𓍯𓈖𓇌𓏏𓈖𓂻 𓍯𓎛𓏏𓏤 𓂝𓇋𓏏: "
+
+#: frontend/templates/frontend/createTournament.html:17
+msgid "Tournament Name"
+msgstr "𓇋𓇏𓇋𓇛𓇋𓇏𓇏𓏴𓇇"
+
+#: frontend/templates/frontend/createTournament.html:18
+#, fuzzy, python-format
+#| msgid "%(username)s's Profile"
+msgid "%(username)s's tournament"
+msgstr "%(username)s𓍯𓆑𓇋𓋴𓄿"
+
+#: frontend/templates/frontend/createTournament.html:19
+msgid "Add a tournament name"
+msgstr "𓂋𓏤𓇋𓏏𓊪 𓏏𓍯𓈖𓇌𓏏𓈖𓂻"
+
+#: frontend/templates/frontend/createTournament.html:27
+msgid "Auto register to the Tournament ?"
+msgstr "𓂋𓏤𓇋𓏏𓊪 𓏏𓍯𓈖𓇌𓏏𓈖𓂻"
+
+#: frontend/templates/frontend/createTournament.html:34
+msgid "Create Tournament"
+msgstr "𓂋𓏤𓇋𓏏𓊪 𓏏𓍯𓈖𓇌𓏏𓈖𓂻"
+
+#: frontend/templates/frontend/displayTournament.html:12
+msgid "Go back"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓏏𓆑𓏤𓇇"
+
+#: frontend/templates/frontend/displayTournament.html:19
+msgid "Delete tournament"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓏏𓋴𓇋𓏤"
+
+#: frontend/templates/frontend/displayTournament.html:25
+msgid "Created by "
+msgstr "𓄿𓋴𓇋𓇏𓇋𓇏 𓇋𓇏𓋴𓄿𓇋𓋭𓂝"
+
+#: frontend/templates/frontend/displayTournament.html:27
+msgid "The winner is: "
+msgstr "𓇋𓇏𓏏𓇋𓇏𓏤 𓇋𓆑𓂷𓇋𓅱𓇋𓇏"
+
+#: frontend/templates/frontend/displayTournament.html:34
+#: frontend/templates/frontend/displayTournament.html:44
+#: frontend/templates/frontend/displayTournament.html:56
+#: frontend/templates/frontend/displayTournament.html:66
+msgid "Slot"
+msgstr "𓋴𓇋𓆑𓋿𓂷"
+
+#: frontend/templates/frontend/displayTournament.html:40
+#: frontend/templates/frontend/displayTournament.html:50
+#: frontend/templates/frontend/displayTournament.html:62
+#: frontend/templates/frontend/displayTournament.html:72
+msgid "Register"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓋭𓇏𓇏"
+
+#: frontend/templates/frontend/displayTournament.html:82
+msgid "Start Tournament"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓄿𓆑𓇋𓋴"
+
+#: frontend/templates/frontend/displayTournament.html:90
+msgid "Tournament is started, you can queue for the tournament in the "
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓄿𓆑𓇋𓋴, 𓇋𓇏𓇏 𓇋𓏏𓄿𓆑𓏤 𓇋𓇏𓋴𓇋𓇏𓏴 𓏏𓆑𓇋𓅱"
+
+#: frontend/templates/frontend/displayTournament.html:91
+msgid "Play"
+msgstr "𓇋𓇏𓇋𓋼𓆑"
+
+#: frontend/templates/frontend/displayTournament.html:92
+msgid "page."
+msgstr "𓇋𓇏𓋴𓇋𓇏𓂝𓇋𓇇"
+
+#: frontend/templates/frontend/displayTournament.html:97
+msgid "Matches:"
+msgstr "𓇋𓏏𓂝𓏤𓇋𓇏𓇋𓇿𓏤"
+
+#: frontend/templates/frontend/displayTournament.html:107
+#: frontend/templates/frontend/profile.html:93
+msgid "Date"
+msgstr "𓇋𓅓𓇋𓇏𓇋𓆑"
+
+#: frontend/templates/frontend/displayTournament.html:108
+msgid "Player 1"
+msgstr "𓇋𓏏𓄿𓇋 1"
+
+#: frontend/templates/frontend/displayTournament.html:109
+msgid "Scores"
+msgstr "𓇋𓆑𓅓𓇋𓆑𓂷"
+
+#: frontend/templates/frontend/displayTournament.html:110
+msgid "Player 2"
+msgstr "𓇋𓏏𓄿𓇋 2"
+
+#: frontend/templates/frontend/displayTournament.html:111
+msgid "Winner"
+msgstr "𓇋𓇏𓏏𓇋𓇏𓏤"
+
+#: frontend/templates/frontend/displayTournament.html:124
+msgid "No match found."
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓂷𓇋𓇇"
+
+#: frontend/templates/frontend/displayTournament.html:130
+msgid ""
+"Unable to display matches when a user from a tournament has been deleted ."
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓂷𓇋𓇇 𓇋𓇏𓄿𓋴𓋮𓆑𓏤𓇋𓇏𓇋𓇛"
+
+#: frontend/templates/frontend/displayTournament.html:133
+msgid "Unable to retrive tournament data."
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓂷𓇋𓇇 𓇋𓇏𓄿𓋴𓋮𓆑𓏤𓇋𓇏𓇋𓇛"
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:3
+msgid "oops"
+msgstr "𓂋𓇋𓏤𓆑𓇋"
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:4
+msgid "log-in to access this page"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓇇𓋴𓇋𓋿 𓇋𓇏𓆑𓇋𓇛 𓇋𓇏𓏏𓇋𓋴"
+
+#: frontend/templates/frontend/friend.html:12
+msgid "Online"
+msgstr "𓇋𓏏𓇋𓋴𓄿𓆑𓇋𓇏"
+
+#: frontend/templates/frontend/friend.html:15
+msgid "All"
+msgstr "𓇋𓏏𓇋𓆑𓇋𓏴"
+
+#: frontend/templates/frontend/friend.html:18
+msgid "Pending"
+msgstr "𓇋𓏏𓇋𓇛𓇋𓇏𓇏𓅓𓏱"
+
+#: frontend/templates/frontend/friend.html:36
+#: frontend/templates/frontend/profile.html:31
+msgid "Cancel Request"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓇏𓇋𓆑𓇏𓏤"
+
+#: frontend/templates/frontend/friend.html:40
+#: frontend/templates/frontend/profile.html:40
+msgid "Accept Request"
+msgstr "𓇋𓇏𓇏𓇋𓇇𓇋𓋭𓇏"
+
+#: frontend/templates/frontend/friend.html:67
+#: frontend/templates/frontend/profile.html:22
+msgid "Remove Friend"
+msgstr "𓇋𓇏𓆑𓇋𓏴 𓇋𓇏𓇋𓏏𓇋𓇏𓂷"
+
+#: frontend/templates/frontend/friend.html:72
+msgid "Kinda empty here..."
+msgstr "𓆑𓇋𓈖𓂷𓀀 𓇋𓆑𓏤𓏇𓏤𓋭 𓏤𓅱𓂻"
+
+#: frontend/templates/frontend/home.html:6
+msgid "news"
+msgstr "𓈖𓏏𓇋𓍯𓇋𓋴"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Position"
+msgstr "𓇋𓏏𓇋𓆑𓋭𓍯𓋭𓆑𓄿"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Pos"
+msgstr "𓇋𓏏𓇋."
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Avatar"
+msgstr "𓇋𓆑𓏤𓏇𓏤𓋭"
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Ava."
+msgstr "𓇋𓆑𓏤."
+
+#: frontend/templates/frontend/ladder.html:10
+msgid "Name"
+msgstr "𓆑𓇋𓈖𓂷𓀀"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Played"
+msgstr "𓇋𓆑𓏤𓏇𓏤𓋭"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Pl"
+msgstr "𓇋𓇏𓇋𓋼𓆑"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "Won"
+msgstr "𓅱𓇋𓏏"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "W"
+msgstr "𓅱"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "Lost"
+msgstr "𓇋𓇏𓆑𓇋𓏴"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "L"
+msgstr "𓇋"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "Goals For"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓇏𓇋𓆑𓇏𓏤"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "GF"
+msgstr "𓋴𓇋"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "Goals Against"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓏏𓇋𓆑𓇋𓏴"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "GA"
+msgstr "𓋴𓇋"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "Goals Difference"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓏏𓂷𓇋𓏤𓇋𓈖"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "GD"
+msgstr "𓋴𓇋"
+
+#: frontend/templates/frontend/login.html:8
+msgid "E-mail"
+msgstr "𓇋𓏏𓂷𓇋𓏤𓇋𓈖"
+
+#: frontend/templates/frontend/login.html:10
+msgid "enter your email"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓈖 𓇋𓇏𓅱𓆑"
+
+#: frontend/templates/frontend/login.html:13
+#: frontend/templates/frontend/register.html:22
+#: frontend/templates/frontend/updateProfile.html:48
+msgid "Password"
+msgstr "𓏇𓂷𓅱𓏤𓄿𓇋"
+
+#: frontend/templates/frontend/login.html:15
+msgid "enter your password"
+msgstr "𓇋𓏏𓂝𓏤 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/login.html:22
+msgid "login with"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓏏𓂷𓏤𓄿𓇋𓋴"
+
+#: frontend/templates/frontend/login.html:26
+#: frontend/templates/frontend/register.html:75
+msgid "reset"
+msgstr "𓆑𓂷𓇋𓏏𓇋𓈖"
+
+#: frontend/templates/frontend/match.html:20
+msgid "Player 1 not available"
+msgstr "𓇋𓏏𓄿𓇋 1 𓇋𓄿𓇋𓆑𓇋𓇋𓆑𓏤"
+
+#: frontend/templates/frontend/match.html:25
+#: frontend/templates/frontend/match.html:48
+#: frontend/templates/frontend/profile.html:67
+msgid "Score"
+msgstr "𓇋𓆑𓅓𓇋𓆑𓂷"
+
+#: frontend/templates/frontend/match.html:44
+msgid "Player 2 not available"
+msgstr "𓇋𓏏𓄿𓇋 2 𓇋𓄿𓇋𓆑𓇋𓇋𓆑𓏤"
+
+#: frontend/templates/frontend/match.html:55
+msgid " has won !"
+msgstr "𓇋𓇏𓏏𓇋𓇏𓏤 𓈖𓂋𓅱𓏏"
+
+#: frontend/templates/frontend/match.html:69
+msgid "Unable to retrieve match data"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓈖𓇏𓏤𓋴𓄿 𓇋𓏏𓋴𓇋𓂝𓇋𓇏𓍯𓇋𓏤"
+
+#: frontend/templates/frontend/play.html:43
+msgid "Freeplay"
+msgstr "𓆑𓇋𓋴𓇋𓄿𓂷𓇋𓇏𓂷"
+
+#: frontend/templates/frontend/play.html:48
+msgid "Show tournaments"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓏴𓇋𓄿𓆑𓇋𓇏𓋭"
+
+#: frontend/templates/frontend/play.html:66
+#: frontend/templates/frontend/tournament.html:30
+msgid "Created by: "
+msgstr "𓄿𓋴𓇋𓇏𓇋𓇏 𓇋𓇏𓋴𓄿𓇋𓋭𓂝"
+
+#: frontend/templates/frontend/play.html:68
+msgid "Enter tournament queue"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓂷 𓇋𓏏𓆑𓏤𓋏𓆑"
+
+#: frontend/templates/frontend/play.html:73
+msgid "There are no tournaments available."
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓂷 𓇋𓏏𓇋𓏯𓇋𓏤"
+
+#: frontend/templates/frontend/profile.html:11
+#, python-format
+msgid "%(username)s's Profile"
+msgstr "%(username)s𓍯𓆑𓇋𓋴𓄿"
+
+#: frontend/templates/frontend/profile.html:15
+#: frontend/templates/frontend/updateProfile.html:12
+msgid "Edit Profile"
+msgstr "𓋴𓇋𓆑𓋿𓂷 𓇋𓇏𓇋𓇏𓋼"
+
+#: frontend/templates/frontend/profile.html:49
+msgid "Add Friend"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓏏𓆑𓏇𓇏𓆑"
+
+#: frontend/templates/frontend/profile.html:64
+msgid "Statistics"
+msgstr "𓋴𓇋𓆑𓋿𓏋𓏤𓇏𓆑𓄿𓋭"
+
+#: frontend/templates/frontend/profile.html:71
+msgid "Total matches"
+msgstr "𓇋𓏏𓇋𓆑𓄿𓋴𓋱𓇏𓅱𓇋𓋭"
+
+#: frontend/templates/frontend/profile.html:75
+msgid "Win rate"
+msgstr "𓇋𓏏𓇋𓇏𓏏𓄿𓋭 𓇋𓇏𓇋𓋿𓇋"
+
+#: frontend/templates/frontend/profile.html:79
+msgid "Ladder position"
+msgstr "𓇋𓏏𓇋𓆑𓋭𓍯𓋭𓆑𓄿"
+
+#: frontend/templates/frontend/profile.html:86
+msgid "Recent Matches"
+msgstr "𓇋𓏏𓂝𓏤 𓆑𓂷𓇋𓅓𓇋𓆑𓆑𓆑"
+
+#: frontend/templates/frontend/profile.html:94
+msgid "Opponent"
+msgstr "𓇋𓏏𓆑𓄿𓇋𓏏"
+
+#: frontend/templates/frontend/profile.html:95
+msgid "Your Score"
+msgstr "𓇋𓏏𓂝𓏤𓏤 𓈖𓏏𓂋𓇋𓂷"
+
+#: frontend/templates/frontend/profile.html:96
+msgid "Opponent's Score"
+msgstr "𓇋𓏏𓆑𓄿𓇋𓏏𓈖𓏏𓏤 𓈖𓏏𓂋𓇋𓂷"
+
+#: frontend/templates/frontend/profile.html:97
+msgid "Result"
+msgstr "𓍯𓆑𓇋𓋴"
+
+#: frontend/templates/frontend/profile.html:109
+#: frontend/templates/frontend/profile.html:115
+msgid "Anon"
+msgstr "𓂻𓎼𓋴"
+
+#: frontend/templates/frontend/profile.html:135
+msgid "Win"
+msgstr "𓅱𓇋𓏏"
+
+#: frontend/templates/frontend/profile.html:137
+msgid "Loss"
+msgstr "𓋴𓆑𓇋𓏤"
+
+#: frontend/templates/frontend/profile.html:143
+msgid "No recent matches found"
+msgstr "𓈖𓎛𓆑 𓇋𓏏𓋴𓎛 𓇋𓇏𓂝𓄿𓏏 𓇋𓈖𓏏𓂻"
+
+#: frontend/templates/frontend/register.html:8
+msgid "Account information"
+msgstr "𓂋𓎛𓆑𓏏𓇋𓅱𓅓 𓈖𓏏𓆑𓆱𓇋𓇏𓂻"
+
+#: frontend/templates/frontend/register.html:10
+#: frontend/templates/frontend/updateProfile.html:34
+#: frontend/templates/frontend/updateProfile.html:87
+msgid "Username"
+msgstr "𓇋𓏏𓈖𓏏𓇋𓍯𓅓"
+
+#: frontend/templates/frontend/register.html:12
+msgid "Chose your username"
+msgstr "𓋴𓆑𓇋𓏤 𓇋𓏏𓈖𓏏𓇋𓍯𓅓"
+
+#: frontend/templates/frontend/register.html:15
+#: frontend/templates/frontend/updateProfile.html:39
+msgid "Email"
+msgstr "𓅓𓏏𓂷𓏤"
+
+#: frontend/templates/frontend/register.html:17
+msgid "Input your Email"
+msgstr "𓇋𓏏𓂝𓏤 𓇋𓇏𓄿𓈖 𓅓𓏏𓂷𓏤"
+
+#: frontend/templates/frontend/register.html:24
+msgid "Input your password"
+msgstr "𓇋𓏏𓂝𓏤 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/register.html:27
+#: frontend/templates/frontend/register.html:29
+msgid "Verify your password"
+msgstr "𓇋𓏏𓂝𓏤 𓏇𓂋𓉐𓆑𓄿 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/register.html:35
+#: frontend/templates/frontend/updateProfile.html:26
+msgid "Profile picture"
+msgstr "𓂋𓏤𓋴𓎛𓄿𓇋𓏤 𓇋𓏏𓇋𓏤𓈖𓇋"
+
+#: frontend/templates/frontend/register.html:37
+#: frontend/templates/frontend/updateProfile.html:28
+msgid "Allowed formats: png, jpeg, jpg and gif"
+msgstr "𓂝𓋴𓎛𓄿𓇋𓏤 𓈖𓏏𓋴𓆑𓇋𓏤: 𓇋𓏏𓄿, 𓏏𓄿𓆑𓂷, 𓍯𓎼𓊪𓏏𓇋𓈖, 𓍯𓊪𓇋𓎛𓆑𓋴"
+
+#: frontend/templates/frontend/register.html:41
+msgid "Terms of Service (TOS)"
+msgstr "𓇋𓇏𓏇 𓏏𓊪𓈖𓀀𓍯 𓏴𓎡𓋴𓇋𓂝 𓄇𓆷𓏏𓏇"
+
+#: frontend/templates/frontend/register.html:58
+msgid "I accept the terms of service"
+msgstr "𓋴𓆑𓇋𓏤 𓇋𓇏𓏇 𓏏𓊪𓈖𓀀𓍯 𓇋𓇏𓇀𓏲𓏇"
+
+#: frontend/templates/frontend/register.html:68
+msgid "register with"
+msgstr "𓂋𓇋𓍯𓏤 𓏲𓎡𓋴𓇋𓂝"
+
+#: frontend/templates/frontend/register.html:72
+msgid "populate"
+msgstr "𓍯𓂋𓎡𓏁"
+
+#: frontend/templates/frontend/tournament.html:12
+msgid "Opened"
+msgstr "𓂀𓈖𓏏𓅓"
+
+#: frontend/templates/frontend/tournament.html:15
+msgid "In progress"
+msgstr "𓏏𓆑𓂋𓏤 𓍯𓎼𓊪𓏏𓈖𓏏𓄿𓂻"
+
+#: frontend/templates/frontend/tournament.html:18
+msgid "Closed"
+msgstr "𓏏𓍯𓈖𓇌𓏏𓏤 𓎼𓂋𓂻"
+
+#: frontend/templates/frontend/tournament.html:21
+msgid "Create a tournament"
+msgstr "𓂋𓏤𓇋𓏏𓊪 𓏏𓍯𓈖𓇌𓏏𓈖𓂻"
+
+#: frontend/templates/frontend/tournament.html:33
+msgid "closed"
+msgstr "𓎛𓆑𓄿𓋴"
+
+#: frontend/templates/frontend/tournament.html:35
+msgid "in progress"
+msgstr "𓆑𓂋𓏤 𓍯𓎼𓊪𓏏𓂻"
+
+#: frontend/templates/frontend/tournament.html:37
+msgid "full"
+msgstr "𓆑𓅓𓄿𓇋𓏏𓂋𓇋"
+
+#: frontend/templates/frontend/tournament.html:39
+msgid " left"
+msgstr "𓍱𓂋𓏤"
+
+#: frontend/templates/frontend/tournament.html:46
+msgid "No tournament found."
+msgstr "𓈖𓎛𓆑 𓏏𓍯𓈖𓇌𓏏𓈖𓏏𓏤"
+
+#: frontend/templates/frontend/updateProfile.html:15
+msgid "Go Back To Profile"
+msgstr "𓂻𓎛𓂋𓇋 𓂋𓍱𓂋𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:36
+msgid "Change your username"
+msgstr "𓍯𓆑𓄿𓂻 𓇋𓏏𓈖𓏏𓈖𓇋"
+
+#: frontend/templates/frontend/updateProfile.html:41
+msgid "You can't change the email"
+msgstr "𓇋𓏏𓆑 𓈖𓏏𓂝 𓍯𓆑𓄿𓂻 𓇋𓈖𓏏𓂋𓂋𓇋"
+
+#: frontend/templates/frontend/updateProfile.html:50
+msgid "New password"
+msgstr "𓅓𓏏𓂋 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:53
+msgid "Confirm password"
+msgstr "𓋴𓏏𓊪𓏏𓂋 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:55
+msgid "Confirm new password"
+msgstr "𓋴𓏏𓊪𓏏𓂋 𓅓𓏏𓂋 𓆑𓂋𓈖𓆑𓂋𓇋𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:61
+msgid "Update"
+msgstr "𓍯𓏤𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:67
+msgid "Delete Profile"
+msgstr "𓂋𓏏𓋴𓎛 𓂋𓍱𓂋"
+
+#: frontend/templates/frontend/updateProfile.html:79
+msgid "Warning !"
+msgstr "𓏏𓊪𓈖𓂻!"
+
+#: frontend/templates/frontend/updateProfile.html:83
+msgid "This action will delete all your user profile forever !"
+msgstr "𓋴𓂝𓊪𓏏𓂋 𓂋𓏏𓋴𓎛 𓅓𓏏𓂋 𓂋𓍱𓂋 𓅱𓏏𓂋𓊪𓏏𓈖𓇋 𓅓𓂻!"
+
+#: frontend/templates/frontend/updateProfile.html:86
+msgid ""
+"If you want to proced write your username below then click Delete my profile"
+msgstr "𓆑 𓇋𓏏𓈖𓂻 𓎛𓄿𓂻 𓆑𓅓𓂝𓏏𓂋𓂻 𓇋𓏏𓈖𓏏𓇋 𓂋𓏏𓋴𓎛 𓂋𓍱𓂋"
+
+#: frontend/templates/frontend/updateProfile.html:92
+msgid "Close"
+msgstr "𓎼𓂋𓂻"
+
+#: frontend/templates/frontend/updateProfile.html:93
+msgid "Delete my profile"
+msgstr "𓂋𓏏𓋴𓎛 𓅓𓍯𓏤 𓂋𓍱𓂋"
+
+#: frontend/templates/frontend/updateProfile.html:100
+msgid "Error"
+msgstr "𓅱𓃀𓏏𓆑𓏏𓂻"
+
+#: transcendence/settings.py:160
+msgid "english"
+msgstr "𓇋𓏏𓆑𓂋𓇋𓍱𓅓𓏏"
+
+#: transcendence/settings.py:161
+msgid " 𓍑𓃏𓏎𓂝𓉣"
+msgstr ""
+
+#: transcendence/settings.py:162
+msgid "українська"
+msgstr ""
+
+#: transcendence/settings.py:163
+msgid "français"
+msgstr "𓆑𓂋𓄿𓈖𓄿𓇋𓋴"
+
+#: transcendence/settings.py:164
+msgid "ქართველი"
+msgstr ""
+
+#: websocket/gameLoop.py:293
+msgid "Match is starting get ready !"
+msgstr "𓍯𓈖𓇌𓏏 𓄿𓂋𓂝𓎛𓄿 𓇋𓏏𓋴𓎛 𓆑𓂋𓈖𓇋𓍱𓂻!"
+
+#: websocket/tournamentLoop.py:188
+msgid "Tournament is starting get ready !"
+msgstr "𓏏𓍯𓈖𓇌𓏏𓈖𓂻 𓄿𓂋𓂝𓎛𓄿 𓇋𓏏𓋴𓎛 𓆑𓂋𓈖𓇋𓍱𓂻!"
+
+#: websocket/tournamentLoop.py:196
+msgid "A player has left the tournament."
+msgstr "𓅓𓏏𓂋 𓇋𓏏𓋴𓎛 𓎛𓆑𓄿𓋴 𓏏𓍯𓈖𓇌𓏏𓈖𓂻"
+
+#: websocket/tournamentLoop.py:202
+msgid "The two finalists are: "
+msgstr "𓇋𓏏𓈖𓏏𓂻 𓆑𓂋𓏤 𓏏𓍯 𓏲𓎛𓆑𓄿𓋴: "
+
+#: websocket/tournamentLoop.py:212
+msgid "Too many players have left the tournament, no one have won."
+msgstr "𓏏𓅱 𓇋𓏏𓋴𓎛 𓎛𓆑𓄿𓋴 𓏏𓍯𓈖𓇌𓏏𓈖𓂻, 𓈖𓎛𓆑 𓍯𓎛𓏏"
+
+#: websocket/tournamentLoop.py:218
+msgid "The tournament winner is: "
+msgstr "𓏏𓍯𓈖𓇌𓏏𓈖𓂻 𓍯𓎛𓏏𓏤 𓂝𓇋𓏏: "

@@ -1,0 +1,22 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+<h1>{% translate 'ladder' %}</h1>
+<div class="container">
+    <table class="table">
+        <thead>
+            <th class="text-center" title="{% translate 'Position' %}">{% translate 'Pos' %}</th>
+            <th class="text-center" title="{% translate 'Avatar' %}">{% translate 'Ava.' %}</th>
+            <th class="text-center">{% translate 'Name' %}</th>
+            <th class="text-center" title="{% translate 'Played' %}">{% translate 'Pl' %}</th>
+            <th class="text-center" title="{% translate 'Won' %}">{% translate 'W' %}</th>
+            <th class="text-center" title="{% translate 'Lost' %}">{% translate 'L' %}</th>
+            <th class="text-center" title="{% translate 'Goals For' %}">{% translate 'GF' %}</th>
+            <th class="text-center" title="{% translate 'Goals Against' %}">{% translate 'GA' %}</th>
+            <th class="text-center" title="{% translate 'Goals Difference' %}">{% translate 'GD' %}</th>
+        </thead>
+        <tbody id="content-ladder">
+
+        </tbody>
+    </table>
+</div>

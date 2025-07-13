@@ -1,0 +1,165 @@
+{% load static %}
+{% load i18n %}
+<!--
+    My name is Ozymandias, King of Kings;
+        Look on my Works, ye Mighty, and despair!
+-->
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8" />
+    <title>ft_transcendence : pong</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="{% translate 'pong with frenemies' %}" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'anim.css' %}">
+    <link rel="icon" href="{% static 'Logo_transcendence.png' %}">
+    <link rel="stylesheet" href="{% static 'popup.css' %}">
+</head>
+<body class="d-flex flex-column min-vh-100" onload="hello()">
+    {% csrf_token %}
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #283E4C;" id="nav">
+        <div class="container-fluid">
+            <a class="col-lg-1 col-md-2 col-sm-2" href="/" id="nav-title"><img src="{% static 'Logo_transcendence.png' %}" alt="avatar" class="col-12 image-fluid" ></a>
+
+            {% if user.is_authenticated %}
+                <form class="d-flex ms-0 ms-lg-2 ms-md-2 ms-sm-1 me-sm-1 col-4 col-sm-4 col-md-4 col-lg-3 nav-item" id="nav-search" role="search">
+                <input id="nav-search-input" class="form-control" type="search" placeholder="{% translate 'search' %}" aria-label="Search">
+                <div class="mt-5 col-2" id="nav-search-result">
+                </div>
+                </form>
+                <div class="m-2 col-md-4 col-sm-5 col-5 d-md-block d-sm-block d-lg-none" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation" id="nav-profile-toggle">
+                </div>
+                <div class="collapse navbar-collapse justify-content-evenly ml-auto" id="navbarToggler">
+                    <ul class="navbar-nav mr-auto col-lg-7" id="nav-link">
+                        <li class="nav-item">
+                            <a href="play" class="nav-link link-light active btn link-opacity-25-hover col-lg-3 text-capitalize" onclick="loadPage('play')">{% translate "play" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light btn link-opacity-25-hover col-lg-3 text-capitalize" onclick="loadPage('ladder')">{% translate "ladder" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light btn link-opacity-25-hover col-lg-3 text-capitalize" onclick="loadPage('tournament')">{% translate "tournament" %}</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link link-light btn link-opacity-25-hover col-lg-3 text-capitalize" onclick="loadPage('profile')">{% translate "profile" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-light btn link-opacity-25-hover col-lg-3 text-capitalize" onclick="loadPage('friend')">{% translate "friend" %}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-danger link-light" onclick="logoutHandler()">{% translate "logout" %}</a>
+                        </li>
+                    </ul>
+                    <div class="col-4 d-none d-lg-block" id="nav-profile">
+                    </div>
+                </div>
+            {% else %}
+                <ul class="navbar-nav mr-auto d-flex flex-row text-capitalize" id="nav-link">
+                    <li class="nav-item m-2">
+                        <a class="btn btn-success link-light" onclick="loadPage('register')">{% translate "register" %}</a>
+                    </li>
+                    <li class="nav-item m-2">
+                        <a class="btn btn-dark link-light" onclick="loadPage('login')">{% translate "login" %}</a>
+                    </li>
+                </ul>
+            {% endif %}
+        </div>
+    </nav>
+    <div class="container-md" id="content-wrap">
+        <div id="error-wrap"></div>
+        <div id="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+        <div id="scrollObserverElement" style="height: 1px; visibility: hidden">
+        </div>
+        <div id="loadingAnim">
+        </div>
+    </div>
+
+    <footer class="footer mt-auto pe-3" id="footer" style="background-color: #283E4C;">
+        <div class="row justify-content-evenly align-items-center">
+            <div class="col-4 col-lg-3" id="flag-wrap">
+                <form id="footer-lang-form" method="POST" action="/i18n/setlang/" >
+                    <div class="input-group">
+                        {% csrf_token %}
+                        <select class="form-select rounded" name="language" class="form-select" >
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% for lang in languages %}
+                                {% if LANGUAGE_CODE == lang.code %}
+                                <option value="{{ lang.code }}" selected>{{lang.name}}</option>
+                                {% else %}
+                                <option value="{{ lang.code }}" >{{lang.name}}</option>
+                                {% endif %}
+                            {% endfor %}
+                        </select>
+                        <button class="btn btn-danger" type="submit">change</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-3">
+                <p class="text-light">
+                    ft_transcendence, @42perpignan <br>
+                    <a href="https://github.com/Omjihn">gbricot</a>,
+                    <a href="https://github.com/AkeZieL">mbilly</a>,
+                    <a href="https://github.com/TimothyREMY">tremy</a>,
+                    <a href="https://github.com/oddcodde">odiachen</a>,
+                    <a href="https://github.com/Moustachestache">mjochum</a>
+                </p>
+                <p class="text-light">
+                    {% translate "GDPR contact" %}:
+                    <br /><a>gdpr@localhost</a>
+                </p>
+            </div>
+            <div class="col-3">
+                <img class="img-fluid" src="https://42perpignan.fr/wp-content/uploads/2022/05/42-Perpignan-white500x170.png"/>
+            </div>
+        </div>
+    </footer>
+    <!-- Cookie Modal -->
+    <div class="modal fade" id="cookieModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <div class="modal-header py-5" style="background-image: url('/static/cookies.gif'); background-position: center; background-size: cover;">
+                </div>
+                <div class="modal-body text-dark">
+                    <h1>{% translate "Cookies policy" %}</h1>
+                    <p>{% translate 'We use a single, essential cookie on this site that serves as a connection token to maintain your session. By clicking Accept, you acknowledge and consent to this cookie being stored in your browser.' %}</p>
+                    <p>{% translate "For a popup-free browsing experience, you can permanently remove this notice by registering an account and accepting our Terms of Service." %}</p>
+                </div>
+                <input type="button" class="btn btn-lg btn-success rounded-0 rounded-bottom" data-bs-dismiss="modal" onclick="cookieDismiss()" value="{% translate 'Accept' %}" />
+            </div>
+        </div>
+    </div>
+<script src="{% static 'mithril_2.2.15.js' %}" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<script src="{% static 'cookies.js' %}"></script>
+<script src="{% static 'singlePage.js' %}"></script>
+<script src="{% static 'utils.js' %}"></script>
+<script src="{% static 'searchWidget.js' %}"></script>
+<script src="{% static 'infinitePage.js' %}"></script>
+<script src="{% static 'profileManagement.js' %}" ></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="{% static 'dashboard.js' %}"></script>
+<script src="{% static 'api_tournament.js' %}"></script>
+<script src="{% static 'ws_pong.js' %}"></script>
+<script src="{% static 'match.js' %}"></script>
+<script src="{% static 'matchmaking.js' %}"></script>
+<script src="{% static 'tournament.js' %}"></script>
+<script src="{% static 'pong.js' %}"></script>
+<script src="{% static 'paddle.js' %}"></script>
+<script src="{% static 'player.js' %}"></script>
+<script src="{% static 'ball.js' %}"></script>
+{% if error %}
+    <script type="text/javascript">displayError("{{ error }}");</script>
+{% endif %}
+</body>
+</html>
+<!--
+    Nothing beside remains. Round the decay
+        Of that colossal Wreck, boundless and bare
+            The lone and level sands stretch far away.
+-->

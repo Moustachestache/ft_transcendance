@@ -1,0 +1,930 @@
+# Georgian translations for transcendence project.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-13 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: Georgian <ka@li.org>\n"
+"Language: ka\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+#: api/models.py:113
+msgid "anonymous"
+msgstr "ანონიმური"
+
+#: api/viewsAPI.py:26
+msgid "Error please use POST method"
+msgstr "გთხოვთ გამოიყენოთ POST მეთოდი"
+
+#: api/viewsAPI.py:42
+msgid "no data for query "
+msgstr "მოთხოვნისთვის მონაცემები არ არის"
+
+#: api/viewsAPI.py:52 api/viewsAPI.py:87 api/viewsAPI.py:115
+#: api/viewsAPI.py:165 api/viewsAPI.py:213
+msgid "Error please use GET method."
+msgstr "გთხოვთ გამოიყენოთ GET მეთოდი."
+
+#: api/viewsAPI.py:56 api/viewsAPI.py:91 api/viewsAPI.py:169
+#: api/viewsAPI.py:216
+msgid "Error you must be logged in."
+msgstr "თქვენ უნდა იყოთ ავტორიზებული."
+
+#: api/viewsAPI.py:62
+msgid "Error the user do not exist."
+msgstr "მომხმარებელი არ არსებობს."
+
+#: api/viewsAPI.py:69 api/viewsAPI.py:73 api/viewsAPI.py:126
+#: api/viewsAPI.py:153 api/viewsAPI.py:203
+msgid "Error please set valid offset and size."
+msgstr "გთხოვთ მიუთითოთ სწორი offset და size."
+
+#: api/viewsAPI.py:104
+msgid "Unable to retrieve user data."
+msgstr "მომხმარებლის მონაცემების მიღება ვერ მოხერხდა."
+
+#: api/viewsAPI.py:119 api/viewsAPI.py:173
+msgid "Error please set offset and size."
+msgstr "გთხოვთ მიუთითოთ offset და size."
+
+#: api/viewsAPI.py:219
+msgid "Error please set the matchId."
+msgstr "გთხოვთ გამოიყენოთ GET მეთოდი."
+
+#: api/viewsAPI.py:224 api/viewsAPI.py:250
+msgid "Error match not found."
+msgstr "ბოლო მატჩები არ მოიძებნა"
+
+#: api/viewsAPI.py:238 api/viewsAPI.py:239
+#: frontend/templates/frontend/displayTournament.html:38
+#: frontend/templates/frontend/displayTournament.html:48
+#: frontend/templates/frontend/displayTournament.html:60
+#: frontend/templates/frontend/displayTournament.html:70
+msgid "Anonymous"
+msgstr "ანონიმური"
+
+#: api/viewsUserManagement.py:37
+msgid "User is already logged in."
+msgstr "მომხმარებელი უკვე ავტორიზებულია."
+
+#: api/viewsUserManagement.py:44 api/viewsUserManagement.py:49
+#: api/viewsUserManagement.py:54
+msgid "Error wrong email or password."
+msgstr "არასწორი ელფოსტა ან პაროლი."
+
+#: api/viewsUserManagement.py:71
+msgid ""
+"UserData is borked or database is offline, this is not supposed to happen."
+msgstr ""
+"მომხმარებლის მონაცემები დაზიანებულია ან ბაზა გათიშულია, ეს არ უნდა "
+"მომხდარიყო."
+
+#: api/viewsUserManagement.py:75
+msgid "Error you are not logged in."
+msgstr "თქვენ არ ხართ ავტორიზებული."
+
+#: api/viewsUserManagement.py:79
+msgid "Error you must use the POST or GET method."
+msgstr "უნდა გამოიყენოთ POST ან GET მეთოდი."
+
+#: api/viewsUserManagement.py:93
+msgid "Error please add an username."
+msgstr "გთხოვთ დაამატოთ მომხმარებლის სახელი."
+
+#: api/viewsUserManagement.py:96 api/viewsUserManagement.py:232
+msgid "Error the username can't contain whitespaces."
+msgstr "მომხმარებლის სახელი არ უნდა შეიცავდეს გამოტოვებებს."
+
+#: api/viewsUserManagement.py:99 api/viewsUserManagement.py:236
+msgid "Error the username is too long. The maximum length is 30 characters."
+msgstr "მომხმარებლის სახელი ძალიან გრძელია. მაქსიმალური სიგრძეა 30 სიმბოლო."
+
+#: api/viewsUserManagement.py:106
+msgid "Error passwords diff."
+msgstr "პაროლები არ ემთხვევა."
+
+#: api/viewsUserManagement.py:123
+msgid "Error this email is already taken."
+msgstr "ეს ელფოსტა უკვე დაკავებულია."
+
+#: api/viewsUserManagement.py:140
+msgid "Error while creating new user."
+msgstr "შეცდომა ახალი მომხმარებლის შექმნისას."
+
+#: api/viewsUserManagement.py:146
+msgid "Error you must POST the register form."
+msgstr "რეგისტრაციის ფორმა უნდა გაიგზავნოს POST მეთოდით."
+
+#: api/viewsUserManagement.py:154
+msgid "?error=Error invalid request method."
+msgstr "?error=არასწორი მოთხოვნის მეთოდი."
+
+#: api/viewsUserManagement.py:157
+msgid "?error=Error you must be redirected by the 42 api."
+msgstr "?error=თქვენ უნდა გადამისამართდეთ 42 API-დან."
+
+#: api/viewsUserManagement.py:168
+msgid "?error=1Error while connecting to the 42 api."
+msgstr "?error=შეცდომა 42 API-სთან დაკავშირებისას."
+
+#: api/viewsUserManagement.py:172
+msgid "?error=Error handshake with the 42 api failed."
+msgstr "?error=42 API-სთან handshake შეწყდა."
+
+#: api/viewsUserManagement.py:177
+msgid "?error=2Error while connecting to the 42 api."
+msgstr "?error=შეცდომა 42 API-სთან დაკავშირებისას."
+
+#: api/viewsUserManagement.py:181
+msgid "?error=Error while fetching infos from the 42 api."
+msgstr "?error=შეცდომა 42 API-დან ინფორმაციის მიღებისას."
+
+#: api/viewsUserManagement.py:188
+msgid "Error your email is already linked to another account without 42 OAuth."
+msgstr "თქვენი ელფოსტა უკვე დაკავშირებულია სხვა ანგარიშთან 42 OAuth-ის გარეშე."
+
+#: api/viewsUserManagement.py:200
+msgid "User in not logged."
+msgstr "მომხმარებელი არ არის ავტორიზებული."
+
+#: api/viewsUserManagement.py:204
+msgid "User successfully logged out."
+msgstr "მომხმარებელი წარმატებით გავიდა სისტემიდან."
+
+#: api/viewsUserManagement.py:216
+msgid "Error you must be logged in to modify your profile."
+msgstr "პროფილის შესაცვლელად უნდა იყოთ ავტორიზებული."
+
+#: api/viewsUserManagement.py:220 api/viewsUserManagement.py:267
+#: api/viewsUserManagement.py:312 api/viewsUserManagement.py:361
+#: api/viewsUserManagement.py:397
+msgid "Error you must use the POST method."
+msgstr "უნდა გამოიყენოთ POST მეთოდი."
+
+#: api/viewsUserManagement.py:228
+msgid "Error please enter a valid username."
+msgstr "გთხოვთ შეიყვანოთ სწორი მომხმარებლის სახელი."
+
+#: api/viewsUserManagement.py:263
+msgid "Error you must be logged in to delete your profile lol."
+msgstr "პროფილის შესაცვლელად უნდა იყოთ ავტორიზებული."
+
+#: api/viewsUserManagement.py:273
+msgid "Error please enter your username."
+msgstr "გთხოვთ შეიყვანოთ სწორი მომხმარებლის სახელი."
+
+#: api/viewsUserManagement.py:277
+msgid "Error wrong username."
+msgstr "გთხოვთ დაამატოთ მომხმარებლის სახელი."
+
+#: api/viewsUserManagement.py:286
+msgid "Error cannot delete user involved in a tournament in-progress."
+msgstr ""
+"შეცდომა, მომხმარებელი ვერ წაიშლება, თუ ის მონაწილეობს მიმდინარე ტურნირში."
+
+#: api/viewsUserManagement.py:292
+#, python-brace-format
+msgid "Error while deleting the user please retry later. {e}"
+msgstr "შეცდომა მომხმარებლის წაშლისას, გთხოვთ სცადოთ გვიან. {e}"
+
+#: api/viewsUserManagement.py:295
+msgid ""
+"User successfully deleted. You will be redirected to the main page in 3 "
+"seconds."
+msgstr ""
+"მომხმარებელი წარმატებით წაიშალა. თქვენ გადახვიდით მთავარ გვერდზე 3 წამში."
+
+#: api/viewsUserManagement.py:308 api/viewsUserManagement.py:357
+#: api/viewsUserManagement.py:393
+msgid "Error you must be logged in to send a friend request."
+msgstr "შეცდომა, უნდა იყოთ ავტორიზებული მეგობრობის მოთხოვნის დასაგზავნად."
+
+#: api/viewsUserManagement.py:318 api/viewsUserManagement.py:323
+#: api/viewsUserManagement.py:367 api/viewsUserManagement.py:372
+#: api/viewsUserManagement.py:403 api/viewsUserManagement.py:408
+msgid "Error wrong user Id provided."
+msgstr "შეცდომა, მოწოდებული მომხმარებლის ID არასწორია."
+
+#: api/viewsUserManagement.py:329
+msgid "Error you are already friend with this person."
+msgstr "შეცდომა, თქვენ უკვე მეგობარი ხართ ამ პიროვნებასთან."
+
+#: api/viewsUserManagement.py:333
+msgid "Error you already have sent a request to this person."
+msgstr "შეცდომა, თქვენ უკვე გამოაგზავნეთ მოთხოვნა ამ პიროვნებასთან."
+
+#: api/viewsUserManagement.py:341
+msgid "Friend successfully added."
+msgstr "მეგობარი წარმატებით დაემატა."
+
+#: api/viewsUserManagement.py:346
+msgid "Friend request has been sent."
+msgstr "მეგობრობის მოთხოვნა გაიგზავნა."
+
+#: api/viewsUserManagement.py:350
+msgid "Error during friendship request, please retry later."
+msgstr "შეცდომა მეგობრობის მოთხოვნის დროს, გთხოვთ სცადოთ გვიან."
+
+#: api/viewsUserManagement.py:377
+msgid "Error friend request not found."
+msgstr "?error=არასწორი მოთხოვნის მეთოდი."
+
+#: api/viewsUserManagement.py:381
+msgid "Friend request successfully deleted."
+msgstr "მომხმარებელი წარმატებით გავიდა სისტემიდან."
+
+#: api/viewsUserManagement.py:385
+msgid "Error unable to remove the friend request please retry later."
+msgstr "შეცდომა, მეგობრობის მოთხოვნის წაშლა ვერ მოხერხდა, გთხოვთ სცადოთ გვიან."
+
+#: api/viewsUserManagement.py:415
+msgid "Error you are not friend with them."
+msgstr "თქვენ არ ხართ ავტორიზებული."
+
+#: api/viewsUserManagement.py:419
+msgid "Friendship successfully deleted."
+msgstr "მომხმარებელი წარმატებით გავიდა სისტემიდან."
+
+#: api/viewsUserManagement.py:423
+#, python-brace-format
+msgid "Error unable to remove friendship please retry later. {e}"
+msgstr "შეცდომა, მეგობრობის მოცილება ვერ მოხერხდა, გთხოვთ სცადოთ გვიან. {e}"
+
+#: frontend/templates/frontend/baseTemplate.html:13
+msgid "pong with frenemies"
+msgstr "პონგი მეგობრებთან"
+
+#: frontend/templates/frontend/baseTemplate.html:29
+msgid "search"
+msgstr "ძებნა"
+
+#: frontend/templates/frontend/baseTemplate.html:38
+msgid "play"
+msgstr "თამაში"
+
+#: frontend/templates/frontend/baseTemplate.html:41
+#: frontend/templates/frontend/ladder.html:4
+msgid "ladder"
+msgstr "რეიტინგი"
+
+#: frontend/templates/frontend/baseTemplate.html:44
+msgid "tournament"
+msgstr "ტურნირი"
+
+#: frontend/templates/frontend/baseTemplate.html:47
+msgid "profile"
+msgstr "პროფილი"
+
+#: frontend/templates/frontend/baseTemplate.html:50
+msgid "friend"
+msgstr "მეგობარი"
+
+#: frontend/templates/frontend/baseTemplate.html:53
+msgid "logout"
+msgstr "გასვლა"
+
+#: frontend/templates/frontend/baseTemplate.html:62
+#: frontend/templates/frontend/register.html:64
+msgid "register"
+msgstr "რეგისტრაცია"
+
+#: frontend/templates/frontend/baseTemplate.html:65
+#: frontend/templates/frontend/login.html:20
+msgid "login"
+msgstr "შესვლა"
+
+#: frontend/templates/frontend/baseTemplate.html:113
+msgid "GDPR contact"
+msgstr "GDPR კონტაქტი"
+
+#: frontend/templates/frontend/baseTemplate.html:129
+msgid "Cookies policy"
+msgstr "კუკების პოლიტიკა"
+
+#: frontend/templates/frontend/baseTemplate.html:130
+msgid ""
+"We use a single, essential cookie on this site that serves as a connection "
+"token to maintain your session. By clicking Accept, you acknowledge and "
+"consent to this cookie being stored in your browser."
+msgstr ""
+"ჩვენ ამ საიტზე ვიყენებთ ერთ-ერთ აუცილებელ კუკის, რომელიც ემსახურება "
+"დაკავშირების ტოკენად თქვენი სესიის შენარჩუნებისთვის. „გადაწყვეტილების "
+"მიღების“ დაჭერით, თქვენ აღიარებთ და თანხმდებით ამ კუკის შენახვაზე თქვენს "
+"ბრაუზერში."
+
+#: frontend/templates/frontend/baseTemplate.html:131
+msgid ""
+"For a popup-free browsing experience, you can permanently remove this notice "
+"by registering an account and accepting our Terms of Service."
+msgstr ""
+"პოპაპის გარეშე ნავიგაციის გამოცდილებისთვის, თქვენ შეგიძლიათ მუდმივად წაშალოთ "
+"ეს შეტყობინება ანგარიშის რეგისტრაციით და ჩვენი მომსახურების პირობების "
+"მიღებით."
+
+#: frontend/templates/frontend/baseTemplate.html:133
+msgid "Accept"
+msgstr "მიღება"
+
+#: frontend/templates/frontend/createTournament.html:12
+msgid "Tournament creation:"
+msgstr "ტურნირის შექმნა:"
+
+#: frontend/templates/frontend/createTournament.html:17
+msgid "Tournament Name"
+msgstr "ტურნირის სახელი"
+
+#: frontend/templates/frontend/createTournament.html:18
+#, python-format
+msgid "%(username)s's tournament"
+msgstr "%(username)s-ის ტურნირი"
+
+#: frontend/templates/frontend/createTournament.html:19
+msgid "Add a tournament name"
+msgstr "დამატეთ ტურნირის სახელი"
+
+#: frontend/templates/frontend/createTournament.html:27
+msgid "Auto register to the Tournament ?"
+msgstr "ავტორეგისტრაცია ტურნირზე?"
+
+#: frontend/templates/frontend/createTournament.html:34
+msgid "Create Tournament"
+msgstr "ტურნირის შექმნა"
+
+#: frontend/templates/frontend/displayTournament.html:12
+msgid "Go back"
+msgstr "დაბრუნდი"
+
+#: frontend/templates/frontend/displayTournament.html:19
+msgid "Delete tournament"
+msgstr "ტურნირის წაშლა"
+
+#: frontend/templates/frontend/displayTournament.html:25
+msgid "Created by "
+msgstr "შექმნილია "
+
+#: frontend/templates/frontend/displayTournament.html:27
+msgid "The winner is: "
+msgstr "მომგებიანი არის: "
+
+#: frontend/templates/frontend/displayTournament.html:34
+#: frontend/templates/frontend/displayTournament.html:44
+#: frontend/templates/frontend/displayTournament.html:56
+#: frontend/templates/frontend/displayTournament.html:66
+msgid "Slot"
+msgstr "სლოტი"
+
+#: frontend/templates/frontend/displayTournament.html:40
+#: frontend/templates/frontend/displayTournament.html:50
+#: frontend/templates/frontend/displayTournament.html:62
+#: frontend/templates/frontend/displayTournament.html:72
+msgid "Register"
+msgstr "რეგისტრაცია"
+
+#: frontend/templates/frontend/displayTournament.html:82
+msgid "Start Tournament"
+msgstr "ტურნირის დაწყება"
+
+#: frontend/templates/frontend/displayTournament.html:90
+msgid "Tournament is started, you can queue for the tournament in the "
+msgstr "ტურნირი დაწყებულია, შეგიძლიათ დაელოდოთ ტურნირისთვის "
+
+#: frontend/templates/frontend/displayTournament.html:91
+msgid "Play"
+msgstr "თამაში"
+
+#: frontend/templates/frontend/displayTournament.html:92
+msgid "page."
+msgstr "გვერდზე."
+
+#: frontend/templates/frontend/displayTournament.html:97
+msgid "Matches:"
+msgstr "ბოლო მატჩები"
+
+#: frontend/templates/frontend/displayTournament.html:107
+#: frontend/templates/frontend/profile.html:93
+msgid "Date"
+msgstr "თარიღი"
+
+#: frontend/templates/frontend/displayTournament.html:108
+msgid "Player 1"
+msgstr "მოთამაშეები"
+
+#: frontend/templates/frontend/displayTournament.html:109
+msgid "Scores"
+msgstr "ქულა"
+
+#: frontend/templates/frontend/displayTournament.html:110
+msgid "Player 2"
+msgstr "მოთამაშეები"
+
+#: frontend/templates/frontend/displayTournament.html:111
+msgid "Winner"
+msgstr "მომგებიანი"
+
+#: frontend/templates/frontend/displayTournament.html:124
+msgid "No match found."
+msgstr "მატჩი ვერ მოიძებნა"
+
+#: frontend/templates/frontend/displayTournament.html:130
+msgid ""
+"Unable to display matches when a user from a tournament has been deleted ."
+msgstr "მატჩების ჩვენება შეუძლებელია, როდესაც ტურნირში המשתსველი წაშლილია."
+
+#: frontend/templates/frontend/displayTournament.html:133
+msgid "Unable to retrive tournament data."
+msgstr "მომხმარებლის მონაცემების მიღება ვერ მოხერხდა."
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:3
+msgid "oops"
+msgstr "უპს"
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:4
+msgid "log-in to access this page"
+msgstr "გვერდზე წვდომისთვის გაიარეთ ავტორიზაცია"
+
+#: frontend/templates/frontend/friend.html:12
+msgid "Online"
+msgstr "ონლაინი"
+
+#: frontend/templates/frontend/friend.html:15
+msgid "All"
+msgstr "ყველა"
+
+#: frontend/templates/frontend/friend.html:18
+msgid "Pending"
+msgstr "მიმდინარე"
+
+#: frontend/templates/frontend/friend.html:36
+#: frontend/templates/frontend/profile.html:31
+msgid "Cancel Request"
+msgstr "დაუშვა მოთხოვნა"
+
+#: frontend/templates/frontend/friend.html:40
+#: frontend/templates/frontend/profile.html:40
+msgid "Accept Request"
+msgstr "დაეთანხმე მოთხოვნას"
+
+#: frontend/templates/frontend/friend.html:67
+#: frontend/templates/frontend/profile.html:22
+msgid "Remove Friend"
+msgstr "მეგობრის წაშლა"
+
+#: frontend/templates/frontend/friend.html:72
+msgid "Kinda empty here..."
+msgstr "აქ ცოტა ცარიელია..."
+
+#: frontend/templates/frontend/home.html:6
+msgid "news"
+msgstr "სიახლეები"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Position"
+msgstr "პოზიცია რეიტინგში"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Pos"
+msgstr "პოზ."
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Avatar"
+msgstr "ავატარი"
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Ava."
+msgstr "ავა."
+
+#: frontend/templates/frontend/ladder.html:10
+msgid "Name"
+msgstr "სახელი"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Played"
+msgstr "თამაში"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Pl"
+msgstr "თამაში"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "Won"
+msgstr "მოგება"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "W"
+msgstr "მოგება"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "Lost"
+msgstr "წაგება"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "L"
+msgstr "წაგება"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "Goals For"
+msgstr "გატანილი გოლები"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "GF"
+msgstr "გატ"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "Goals Against"
+msgstr "მიღებული გოლები"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "GA"
+msgstr "მიღ"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "Goals Difference"
+msgstr "ბურთების სხვაობა"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "GD"
+msgstr "ბურ"
+
+#: frontend/templates/frontend/login.html:8
+msgid "E-mail"
+msgstr "ელფოსტა"
+
+#: frontend/templates/frontend/login.html:10
+msgid "enter your email"
+msgstr "შეიყვანეთ თქვენი ელფოსტა"
+
+#: frontend/templates/frontend/login.html:13
+#: frontend/templates/frontend/register.html:22
+#: frontend/templates/frontend/updateProfile.html:48
+msgid "Password"
+msgstr "პაროლი"
+
+#: frontend/templates/frontend/login.html:15
+msgid "enter your password"
+msgstr "შეიყვანეთ თქვენი პაროლი"
+
+#: frontend/templates/frontend/login.html:22
+msgid "login with"
+msgstr "შესვლა სერვისით"
+
+#: frontend/templates/frontend/login.html:26
+#: frontend/templates/frontend/register.html:75
+msgid "reset"
+msgstr "განულება"
+
+#: frontend/templates/frontend/match.html:20
+msgid "Player 1 not available"
+msgstr "მოთამაშე 1 მიუწვდომელია"
+
+#: frontend/templates/frontend/match.html:25
+#: frontend/templates/frontend/match.html:48
+#: frontend/templates/frontend/profile.html:67
+msgid "Score"
+msgstr "ქულა"
+
+#: frontend/templates/frontend/match.html:44
+msgid "Player 2 not available"
+msgstr "მოთამაშე 2 მიუწვდომელია"
+
+#: frontend/templates/frontend/match.html:55
+msgid " has won !"
+msgstr " გაიმარჯვა !"
+
+#: frontend/templates/frontend/match.html:69
+msgid "Unable to retrieve match data"
+msgstr "მომხმარებლის მონაცემების მიღება ვერ მოხერხდა."
+
+#: frontend/templates/frontend/play.html:43
+msgid "Freeplay"
+msgstr "თამაში"
+
+#: frontend/templates/frontend/play.html:48
+msgid "Show tournaments"
+msgstr "ტურნირი"
+
+#: frontend/templates/frontend/play.html:66
+#: frontend/templates/frontend/tournament.html:30
+msgid "Created by: "
+msgstr "შექმნილია მიერ:"
+
+#: frontend/templates/frontend/play.html:68
+msgid "Enter tournament queue"
+msgstr "ტურნირის რიგში ჩადგომა"
+
+#: frontend/templates/frontend/play.html:73
+msgid "There are no tournaments available."
+msgstr "ტირის რიგში ჩადგომა"
+
+#: frontend/templates/frontend/profile.html:11
+#, python-format
+msgid "%(username)s's Profile"
+msgstr "%(username)s-ის პროფილი"
+
+#: frontend/templates/frontend/profile.html:15
+#: frontend/templates/frontend/updateProfile.html:12
+msgid "Edit Profile"
+msgstr "პროფილის რედაქტირება"
+
+#: frontend/templates/frontend/profile.html:49
+msgid "Add Friend"
+msgstr "მეგობრის დამატება"
+
+#: frontend/templates/frontend/profile.html:64
+msgid "Statistics"
+msgstr "სტატისტიკა"
+
+#: frontend/templates/frontend/profile.html:71
+msgid "Total matches"
+msgstr "ჯამური მატჩები"
+
+#: frontend/templates/frontend/profile.html:75
+msgid "Win rate"
+msgstr "მოგების კოეფიციენტი"
+
+#: frontend/templates/frontend/profile.html:79
+msgid "Ladder position"
+msgstr "პოზიცია რეიტინგში"
+
+#: frontend/templates/frontend/profile.html:86
+msgid "Recent Matches"
+msgstr "ბოლო მატჩები"
+
+#: frontend/templates/frontend/profile.html:94
+msgid "Opponent"
+msgstr "მოწინააღმდეგე"
+
+#: frontend/templates/frontend/profile.html:95
+msgid "Your Score"
+msgstr "თქვენი ქულა"
+
+#: frontend/templates/frontend/profile.html:96
+msgid "Opponent's Score"
+msgstr "მოწინააღმდეგის ქულა"
+
+#: frontend/templates/frontend/profile.html:97
+msgid "Result"
+msgstr "შედეგი"
+
+#: frontend/templates/frontend/profile.html:109
+#: frontend/templates/frontend/profile.html:115
+msgid "Anon"
+msgstr "ოგ"
+
+#: frontend/templates/frontend/profile.html:135
+msgid "Win"
+msgstr "მოგება"
+
+#: frontend/templates/frontend/profile.html:137
+msgid "Loss"
+msgstr "წაგება"
+
+#: frontend/templates/frontend/profile.html:143
+msgid "No recent matches found"
+msgstr "ბოლო მატჩები არ მოიძებნა"
+
+#: frontend/templates/frontend/register.html:8
+msgid "Account information"
+msgstr "ანგარიშის ინფორმაცია"
+
+#: frontend/templates/frontend/register.html:10
+#: frontend/templates/frontend/updateProfile.html:34
+#: frontend/templates/frontend/updateProfile.html:87
+msgid "Username"
+msgstr "მომხმარებლის სახელი"
+
+#: frontend/templates/frontend/register.html:12
+msgid "Chose your username"
+msgstr "აირჩიეთ მომხმარებლის სახელი"
+
+#: frontend/templates/frontend/register.html:15
+#: frontend/templates/frontend/updateProfile.html:39
+msgid "Email"
+msgstr "ელფოსტა"
+
+#: frontend/templates/frontend/register.html:17
+msgid "Input your Email"
+msgstr "შეიყვანეთ თქვენი ელფოსტა"
+
+#: frontend/templates/frontend/register.html:24
+msgid "Input your password"
+msgstr "შეიყვანეთ თქვენი პაროლი"
+
+#: frontend/templates/frontend/register.html:27
+#: frontend/templates/frontend/register.html:29
+msgid "Verify your password"
+msgstr "დაადასტურეთ თქვენი პაროლი"
+
+#: frontend/templates/frontend/register.html:35
+#: frontend/templates/frontend/updateProfile.html:26
+msgid "Profile picture"
+msgstr "პროფილის სურათი"
+
+#: frontend/templates/frontend/register.html:37
+#: frontend/templates/frontend/updateProfile.html:28
+msgid "Allowed formats: png, jpeg, jpg and gif"
+msgstr "დაშვებული ფორმატები: png, jpeg, jpg და gif"
+
+#: frontend/templates/frontend/register.html:41
+msgid "Terms of Service (TOS)"
+msgstr "მომსახურების პირობები (TOS)"
+
+#: frontend/templates/frontend/register.html:58
+msgid "I accept the terms of service"
+msgstr "ვეთანხმები მომსახურების პირობებს"
+
+#: frontend/templates/frontend/register.html:68
+msgid "register with"
+msgstr "რეგისტრაცია სერვისით"
+
+#: frontend/templates/frontend/register.html:72
+msgid "populate"
+msgstr "შევსება"
+
+#: frontend/templates/frontend/tournament.html:12
+msgid "Opened"
+msgstr "გახსნილი"
+
+#: frontend/templates/frontend/tournament.html:15
+msgid "In progress"
+msgstr "მიმდინარეობს"
+
+#: frontend/templates/frontend/tournament.html:18
+msgid "Closed"
+msgstr "დასრულებული"
+
+#: frontend/templates/frontend/tournament.html:21
+msgid "Create a tournament"
+msgstr "ტურნირის შექმნა"
+
+#: frontend/templates/frontend/tournament.html:33
+msgid "closed"
+msgstr "დასრულებული"
+
+#: frontend/templates/frontend/tournament.html:35
+msgid "in progress"
+msgstr "მიმდინარეობს"
+
+#: frontend/templates/frontend/tournament.html:37
+msgid "full"
+msgstr "სავსეა"
+
+#: frontend/templates/frontend/tournament.html:39
+msgid " left"
+msgstr " დარჩა"
+
+#: frontend/templates/frontend/tournament.html:46
+msgid "No tournament found."
+msgstr "ბოლო მატჩები არ მოიძებნა"
+
+#: frontend/templates/frontend/updateProfile.html:15
+msgid "Go Back To Profile"
+msgstr "პროფილზე დაბრუნება"
+
+#: frontend/templates/frontend/updateProfile.html:36
+msgid "Change your username"
+msgstr "შეცვალეთ მომხმარებლის სახელი"
+
+#: frontend/templates/frontend/updateProfile.html:41
+msgid "You can't change the email"
+msgstr "ელფოსტის შეცვლა შეუძლებელია"
+
+#: frontend/templates/frontend/updateProfile.html:50
+msgid "New password"
+msgstr "ახალი პაროლი"
+
+#: frontend/templates/frontend/updateProfile.html:53
+msgid "Confirm password"
+msgstr "დაადასტურეთ პაროლი"
+
+#: frontend/templates/frontend/updateProfile.html:55
+msgid "Confirm new password"
+msgstr "დაადასტურეთ ახალი პაროლი"
+
+#: frontend/templates/frontend/updateProfile.html:61
+msgid "Update"
+msgstr "განახლება"
+
+#: frontend/templates/frontend/updateProfile.html:67
+msgid "Delete Profile"
+msgstr "პროფილის რედაქტირება"
+
+#: frontend/templates/frontend/updateProfile.html:79
+msgid "Warning !"
+msgstr "გაფრთხილება!"
+
+#: frontend/templates/frontend/updateProfile.html:83
+msgid "This action will delete all your user profile forever !"
+msgstr "ეს ქმედება სამუდამოდ წაშლის თქვენს მომხმარებლის პროფილს!"
+
+#: frontend/templates/frontend/updateProfile.html:86
+msgid ""
+"If you want to proced write your username below then click Delete my profile"
+msgstr ""
+"თუ გსურთ გაგრძელება, ქვემოთ ჩაწერეთ თქვენი მომხმარებლის სახელი და "
+"დააწკაპუნეთ 'პროფილის წაშლა'-ზე."
+
+#: frontend/templates/frontend/updateProfile.html:92
+msgid "Close"
+msgstr "დახურვა"
+
+#: frontend/templates/frontend/updateProfile.html:93
+msgid "Delete my profile"
+msgstr "ჩემი პროფილის წაშლა"
+
+#: frontend/templates/frontend/updateProfile.html:100
+msgid "Error"
+msgstr "შეცდომა"
+
+#: transcendence/settings.py:160
+msgid "english"
+msgstr "ინგლისური"
+
+#: transcendence/settings.py:161
+msgid " 𓍑𓃏𓏎𓂝𓉣"
+msgstr ""
+
+#: transcendence/settings.py:162
+msgid "українська"
+msgstr ""
+
+#: transcendence/settings.py:163
+msgid "français"
+msgstr ""
+
+#: transcendence/settings.py:164
+msgid "ქართველი"
+msgstr ""
+
+#: websocket/gameLoop.py:293
+msgid "Match is starting get ready !"
+msgstr "მატჩი იწყება, მოემზადეთ!"
+
+#: websocket/tournamentLoop.py:188
+msgid "Tournament is starting get ready !"
+msgstr "ტურნირი იწყება, მოემზადეთ!"
+
+#: websocket/tournamentLoop.py:196
+msgid "A player has left the tournament."
+msgstr "მოთამაშე ტურნირს გამოეთიშა."
+
+#: websocket/tournamentLoop.py:202
+msgid "The two finalists are: "
+msgstr "ორი ფინალისტია:"
+
+#: websocket/tournamentLoop.py:212
+msgid "Too many players have left the tournament, no one have won."
+msgstr "ტურნირი ბევრმა მოთამაშემ დატოვა, გამარჯვებული არ გამოვლენილა."
+
+#: websocket/tournamentLoop.py:218
+msgid "The tournament winner is: "
+msgstr "ტურნირის გამარჯვებულია:"
+
+#~ msgid "Offline"
+#~ msgstr "ოფლაინი"
+
+#~ msgid "Single Player"
+#~ msgstr "ერთი მოთამაშე"
+
+#~ msgid "Multi Player"
+#~ msgstr "მრავალი მოთამაშე"
+
+#~ msgid "Normal PvP"
+#~ msgstr "ჩვეულებრივი PvP"
+
+#~ msgid "Ranked PvP"
+#~ msgstr "სარეიტინგო PvP"
+
+#~ msgid "Player Score Board"
+#~ msgstr "მოთამაშეების ქულების დაფა"
+
+#~ msgid "load more"
+#~ msgstr "მეტის ჩვენება"
+
+#~ msgid "Draw"
+#~ msgstr "ფრე"
+
+#~ msgid "Select your language"
+#~ msgstr "აირჩიეთ თქვენი ენა"
+
+#~ msgid "Language"
+#~ msgstr "ენა"
+
+#~ msgid "egyptian"
+#~ msgstr "ეგვიპტური"
+
+#~ msgid "ukrainian"
+#~ msgstr "უკრაინული"
+
+#~ msgid "french"
+#~ msgstr "ფრანგული"
+
+#~ msgid "georgian"
+#~ msgstr "ქართული"

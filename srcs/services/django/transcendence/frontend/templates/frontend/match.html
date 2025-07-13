@@ -1,0 +1,70 @@
+{% load static %}
+{% include 'frontend/jsProtection.html' %}
+{% load i18n %}
+{% if match and userDataPlayer1 or userDataPlayer2 %}
+<div class="container-md">
+<!-- Users stats -->
+    <div class="row">
+        <div class="col gray-background text-shrink" >
+            {% if userDataPlayer1 %}
+            <div class="d-flex align-items-center pointer-hover justify-content-end " onclick="loadPage('profile', 'userId={{match.player_1.id}}')">
+                <h2 class="text-center text-shrink" title="{{match.player_1.username}}" >{{match.player_1.username}}</h2>
+                {% if userDataPlayer1.profile_pic %}
+                <img src="/media/{{ userDataPlayer1.profile_pic }}" class="img-fluid float-end shadow match-pic" >
+                {% else %}
+                <img src="{% static 'profileDefault.png' %}" class="img-fluid float-end shadow match-pic" >
+                {% endif %}
+            </div>
+            {% else %}
+            <div class="d-flex align-items-center justify-content-end ">
+                <h4 class="text-center">{% translate 'Player 1 not available' %}</h4>
+                <img src="{% static 'profileDefault.png' %}" class="img-fluid float-end shadow match-pic" >
+            </div>
+            {% endif %}
+            <div class="col-1 match-sep" ></div>
+            <h4 class="text-center" style="margin-top: 10px;" >{% translate 'Score' %}: {{ goalsPlayer1 }}</h4>
+            <div></div>
+        </div>
+        <div class="col-1 d-flex align-items-center justify-content-center">
+            <h2 class="text-center" style="min-width: 64px; min-height: 64px; text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);" >VS</h2>
+        </div>
+        <div class="col gray-background text-shrink">
+            {% if userDataPlayer2 %}
+            <div class="d-flex align-items-center pointer-hover" onclick="loadPage('profile', 'userId={{match.player_2.id}}')">
+                {% if userDataPlayer2.profile_pic %}
+                <img src="/media/{{ userDataPlayer2.profile_pic }}" class="img-fluid shadow match-pic" >
+                {% else %}
+                <img src="{% static 'profileDefault.png' %}" class="img-fluid shadow match-pic" >
+                {% endif %}
+                <h2 class="text-center text-shrink" id="player2Title" title="{{match.player_2.username}}" >{{match.player_2.username}}</h2>
+            </div>
+            {% else %}
+            <div class="d-flex align-items-center">
+                <img src="{% static 'profileDefault.png' %}" class="img-fluid shadow match-pic" >
+                <h4 class="text-center">{% translate 'Player 2 not available' %}</h4>
+            </div>
+            {% endif %}
+            <div class="col-1 match-sep" ></div>
+            <h4 class="text-center" style="margin-top: 10px;" >{% translate 'Score' %}: {{ goalsPlayer2 }}</h4>
+        </div>
+    </div>
+
+<!-- Global match stats -->
+    <div class="row align-items-center p-4 gray-background" style="margin-top: 15px;" id="ChartsLoaded">
+        {% if match.winner %}
+        <h3 class="text-center">{{match.winner.username}}{% translate ' has won !' %}</h3>
+        {% endif %}
+        <div class="col-md d-flex justify-content-center flex-wrap" >
+            <div class="linechart-container" >
+                <canvas id="lineChart" ></canvas>
+            </div>
+        </div>
+        <div class="col-md d-flex justify-content-center flex-wrap">
+            <div class="doughnutchart-container" >
+                <canvas id="doughnutChart" ></canvas>
+            </div>
+        </div>
+    </div>
+{% else %}
+    <h2 class="text-center">{% translate 'Unable to retrieve match data' %}</h2>
+{% endif %}

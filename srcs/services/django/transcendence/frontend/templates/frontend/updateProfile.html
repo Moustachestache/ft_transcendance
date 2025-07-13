@@ -1,0 +1,101 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+{% if userData %}
+<div class="row align-items-center p-4 gray-background" style="background-image: url('{% static "Avatar_world_map_opacity_max.jpg" %}');
+background-size: cover;
+background-position: center;">
+    <form id="updateForm" method="POST" target="/api/update" >
+        {% csrf_token %}
+        <div class="row align-items-center mb-4 text-white">
+            <div class="col-md-6">
+                <h2>{% translate 'Edit Profile' %} :</h2>
+            </div>
+            <div class="col-md-6 text-end">
+                <input class="btn btn-secondary" onclick="loadPage('profile')" type="button" value="{% translate 'Go Back To Profile' %}">
+            </div>
+        </div>
+        <div class="row py-3 text-white">
+            <div class="d-flex align-items-center">
+                {% if userData.profile_pic %}
+                <img src="/media/{{ userData.profile_pic }}" class="rounded-circle" style="width: 100px; height: 100px; margin-right: 10px;">
+                {% else %}
+                <img src="/static/profileDefault.png" class="rounded-circle" style="width: 100px; height: 100px; margin-right: 10px;">
+                {% endif %}
+                <div class="col-md">
+                    <label class="form-label text-white">{% translate 'Profile picture' %}</label>
+                    <input name="profilePicture" class="form-control" type="file" accept="image/*">
+                    <div class="form-text text-white">{% translate 'Allowed formats: png, jpeg, jpg and gif' %}.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row py-3">
+            <div class="col-md">
+                <label class="form-label text-white">{% translate 'Username' %}</label>
+                <input class="form-control" type="text" name="username" value="{{ userData.user.username }}" required>
+                <div class="form-text text-white">{% translate 'Change your username' %}.</div>
+            </div>
+            <div class="col-md">
+                <label class="form-label text-white">{% translate 'Email' %}</label>
+                <input class="form-control" type="email" value="{{ userData.user.email }}" disabled>
+                <div class="form-text text-white">{% translate "You can't change the email" %}.</div>
+            </div>
+        </div>
+        {% if userData.isOAuth %}
+        {% else %}
+        <div class="row py-3">
+            <div class="col-md">
+                <label class="form-label text-white">{% translate 'Password' %}</label>
+                <input class="form-control" type="password" name="password1">
+                <div class="form-text text-white">{% translate 'New password' %}.</div>
+            </div>
+            <div class="col-md">
+                <label class="form-label text-white">{% translate 'Confirm password' %}</label>
+                <input class="form-control" type="password" name="password2">
+                <div class="form-text text-white">{% translate 'Confirm new password' %}.</div>
+            </div>
+        </div>
+        {% endif %}
+        <div class="row py-3">
+            <div class="col-md d-grid gap-2">
+                <input class="btn btn-primary" onclick="updateHandler(document.getElementById('updateForm'))"  type="button" value="{% translate 'Update' %}"  style="background-color: #244aa5; border-color: #244aa5;">
+            </div>
+        </form>
+            <div class="col-md d-grid gap-2">
+                    <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    {% translate 'Delete Profile' %}
+                </button>
+            </div>
+        </div>
+</div>
+<!-- Modal -->
+<form id="deleteForm" method="POST" target="/api/delete" >
+    {% csrf_token %}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">{% translate 'Warning !' %}</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    {% translate 'This action will delete all your user profile forever !' %}
+                </div>
+                <div class="modal-body text-center">
+                    {% translate 'If you want to proced write your username below then click Delete my profile' %}
+                    <input class="form-control" type="text" name="usernameDelete" id="modalInput" placeholder="{% translate 'Username' %}" required >
+                    <label class="form-label text-center text-danger" id="errLabel" ></label>
+                </div>
+                
+                <div class="modal-footer">
+                    <input class="btn btn-secondary" data-bs-dismiss="modal" value="{% translate 'Close' %}" >
+                    <input class="btn btn-danger" id="deleteConfirm" onclick="deleteUserHandler(document.getElementById('deleteForm'), document.getElementById('errLabel'))" value="{% translate 'Delete my profile' %}" >
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{% else %}
+<h3>{% translate 'Error' %}</h3>
+{% endif %}

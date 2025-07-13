@@ -1,0 +1,134 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+
+{% if tournament %}
+    <div class="row align-items-center bg-white {% if matches %} rounded-top-5 {% else %} rounded-5 {% endif %}" style="background-image: url('{% static "Avatar_world_map_opacity_max.jpg" %}');
+    background-size: cover;
+    background-position: top;>
+        <div class="row align-items-center">
+            <div class="row mb-2 p-3 align-items-center">
+                <div class="col-6 d-flex justify-content-start">
+                    <input class="btn btn-secondary" onclick="loadPage('tournament'{% if status == "inProgress"%}, 'list=inProgress'{% elif status == "closed" %}, 'list=closed'{% endif %})" type="button" value="{% translate 'Go back' %}">
+                </div>
+                {% if user == tournament.creator and tournament.status == 'open' %}
+                <div class="col-6 p-3 d-flex justify-content-end">
+                    <form id="deleteForm" target="/api/tournament/delete" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="hidden" value="{{ tournament.id }}" name="tournamentId" id="tournamentId">
+                        <input class="btn btn-danger" onclick="tournamentDeleteHandler(document.getElementById('deleteForm'))" type="button" value="{% translate 'Delete tournament' %}"/>
+                    </form>
+                </div>
+                {% endif %}
+            </div>
+            <h2 class="text-center text-white">{{ tournament.title }}</h2>
+            <h4 class="text-center pointer-hover text-white" onclick="loadPage('profile', 'userId={{ tournament.creator.id }}')">{% translate 'Created by ' %}{{ tournament.creator.username }}</h4>
+            {% if tournament.status == 'closed' and tournament.winner %}
+            <h3 class="text-center text-white">{% translate 'The winner is: ' %}{{ tournament.winner.username }}</h3>
+            {% endif %}
+            <form id="tournamentRegisterForm" target="/api/tournament/register" method="POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="hidden" value="{{ tournament.id }}" name="tournamentId" id="tournamentId">
+                <div class="row py-3 text-center">
+                    <div class="col-6">
+                        <label class="form-label text-white">{% translate 'Slot' %} 1:</label>
+                        {% if tournament.player_1 %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{{ tournament.player_1.username }}"/>
+                        {% elif status == "closed" %}
+                        <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{% translate 'Anonymous' %}"/>
+                        {% else %}
+                            <input class="btn btn-primary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" onclick="tournamentRegisterHandler(document.getElementById('tournamentRegisterForm'), 1, '{{ tournament.id }}')" value="{% translate 'Register' %}"/>
+                        {% endif %}
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label text-white">{% translate 'Slot' %} 2:</label>
+                        {% if tournament.player_2 %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{{ tournament.player_2.username }}"/>
+                        {% elif status == "closed" %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{% translate 'Anonymous' %}"/>
+                        {% else %}
+                            <input class="btn btn-primary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" onclick="tournamentRegisterHandler(document.getElementById('tournamentRegisterForm'), 2, '{{ tournament.id }}')" value="{% translate 'Register' %}"/>
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="row py-3 text-center">
+                    <div class="col-6">
+                        <label class="form-label text-white">{% translate 'Slot' %} 3:</label>
+                        {% if tournament.player_3 %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{{ tournament.player_3.username }}"/>
+                        {% elif status == "closed" %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{% translate 'Anonymous' %}"/>
+                        {% else %}
+                            <input class="btn btn-primary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" onclick="tournamentRegisterHandler(document.getElementById('tournamentRegisterForm'), 3, '{{ tournament.id }}')" value="{% translate 'Register' %}"/>
+                        {% endif %}
+                    </div>
+                    <div class="col-6">
+                        <label class="form-label text-white">{% translate 'Slot' %} 4:</label>
+                        {% if tournament.player_4 %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{{ tournament.player_4.username }}"/>
+                        {% elif status == "closed" %}
+                            <input class="btn btn-secondary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" disabled value="{% translate 'Anonymous' %}"/>
+                        {% else %}
+                            <input class="btn btn-primary btn-tournament col-12 col-sm-8 col-md-6 col-lg-5" onclick="tournamentRegisterHandler(document.getElementById('tournamentRegisterForm'), 4, '{{ tournament.id }}')" value="{% translate 'Register' %}"/>
+                        {% endif %}
+                    </div>
+                </div>
+                {% if user == tournament.creator and status != "closed" %}
+                <hr><hr>
+                <div class="d-grid gap-2 d-flex justify-content-center col-12 mb-2">
+                    <form id="validateForm" target="/api/tournament/validate" method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <input type="hidden" value="{{ tournament.id }}" name="tournamentId" id="tournamentId">
+                        <input class="btn btn-primary btn-tournament" onclick="tournamentValidateHandler(document.getElementById('tournamentRegisterForm'), '{{ tournament.id }}')" {% if tournament.player_1 and tournament.player_2 and tournament.player_3 and tournament.player_4 and status == "open" %} {% else %} disabled {% endif %} value="{% translate 'Start Tournament' %}"/>
+                    </form>
+                </div>
+                {% endif %}
+            </form>
+            {% if status == "inProgress" %}
+                {% if user == tournament.player_1 or user == tournament.player_2 or user == tournament.player_3 or user == tournament.player_4 %}
+                <div class="text-center text-white" style="margin-top: 10px;">
+                    {% translate 'Tournament is started, you can queue for the tournament in the ' %}
+                    <a class="pointer-hover text-white" onclick="loadPage('play')">{% translate 'Play'%}</a>
+                    {% translate 'page.' %}
+                </div>
+                {% endif %}
+            {% endif %}
+            {% if matches %}
+                <h4 class="text-center mt-5 text-white">{% translate 'Matches:' %}</h4>
+            {% endif %}
+        </div>
+
+    </div>
+    {% if matches %}
+        <div class="row border border-4 border-white bg-white rounded-bottom-5">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="">{% translate 'Date' %}</th>
+                        <th>{% translate 'Player 1' %}</th>
+                        <th>{% translate "Scores" %}</th>
+                        <th>{% translate 'Player 2' %}</th>
+                        <th>{% translate 'Winner' %}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for match in matches %}
+                    <tr class="pointer-hover" onclick="loadPage('match', 'matchId={{match.id}}')">
+                        <td>{{ match.end_date|date:"M d, Y, H:i" }}</td>
+                        <td>{{ match.player_1 }}</td>
+                        <td>{{ match.player_1_score }} : {{ match.player_2_score }}</td>
+                        <td>{{ match.player_2 }}</td>
+                        <td>{{ match.winner.username }}</td>
+                    {% empty %}
+                    <tr>
+                        <td colspan="5" class="text-center">{% translate 'No match found.' %}.</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+        </div>
+    {% elif status == "closed" %}
+        <h2 class="text-center">{% translate 'Unable to display matches when a user from a tournament has been deleted .' %}</h2>
+    {% endif %}
+{% else %}
+<h2 class="text-center">{% translate 'Unable to retrive tournament data.' %}</h2>
+{% endif %}

@@ -1,0 +1,29 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+<form id="loginForm">
+    {% csrf_token %}
+    <div class="row py-3">
+        <div class="col">
+            <label for="email" class="form-label">{% translate 'E-mail' %}</label>
+            <input type="text" class="form-control" id="email" name="email" aria-describedby="loginHelp" required />
+            <div id="loginHelp" class="form-text">{% translate 'enter your email' %}</div>
+        </div>
+        <div class="col">
+            <label for="password" class="form-label">{% translate 'Password' %}</label>
+            <input type="password" class="form-control" id="password" name="password" aria-describedby="passwordHelp" required />
+            <div id="passwordHelp" class="form-text">{% translate 'enter your password' %}</div>
+        </div>
+    </div>
+    <div class="row py-3">
+        <div class="col-md d-grid gap-2">
+            <input type="button" onclick="loginHandler(document.getElementById('loginForm'))" class="btn btn-primary" value="{% translate 'login' %}" />
+			<a class="btn btn-dark link-light" href="https://api.intra.42.fr/oauth/authorize?client_id={{ clientId }}&redirect_uri={{ redirectURI }}&response_type=code">
+                {% translate 'login with' %} <img height="12em" src="/static/42-logo.svg">
+            </a>
+        </div>
+        <div class="col-md d-grid gap-2">
+            <input class="btn btn-secondary" type="reset" value="{% translate 'reset' %}" />
+        </div>
+    </div>
+</form>

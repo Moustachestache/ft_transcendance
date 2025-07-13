@@ -1,0 +1,944 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-05-13 12:10+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: api/models.py:113
+msgid "anonymous"
+msgstr "anonyme"
+
+#: api/viewsAPI.py:26
+msgid "Error please use POST method"
+msgstr "Erreur, veuillez utiliser la méthode POST"
+
+#: api/viewsAPI.py:42
+msgid "no data for query "
+msgstr "Aucune donnée pour la requête"
+
+#: api/viewsAPI.py:52 api/viewsAPI.py:87 api/viewsAPI.py:115
+#: api/viewsAPI.py:165 api/viewsAPI.py:213
+msgid "Error please use GET method."
+msgstr "Erreur, veuillez utiliser la méthode GET."
+
+#: api/viewsAPI.py:56 api/viewsAPI.py:91 api/viewsAPI.py:169
+#: api/viewsAPI.py:216
+msgid "Error you must be logged in."
+msgstr "Erreur, vous devez être connecté.e."
+
+#: api/viewsAPI.py:62
+msgid "Error the user do not exist."
+msgstr "Erreur, l'utilisateur.rice n'existe pas."
+
+#: api/viewsAPI.py:69 api/viewsAPI.py:73 api/viewsAPI.py:126
+#: api/viewsAPI.py:153 api/viewsAPI.py:203
+msgid "Error please set valid offset and size."
+msgstr "Erreur, veuillez définir un offset et une taille valides."
+
+#: api/viewsAPI.py:104
+msgid "Unable to retrieve user data."
+msgstr "Impossible de récupérer les données de l'utilisateur.rice."
+
+#: api/viewsAPI.py:119 api/viewsAPI.py:173
+msgid "Error please set offset and size."
+msgstr "Erreur, veuillez définir l'offset et la taille."
+
+#: api/viewsAPI.py:219
+msgid "Error please set the matchId."
+msgstr "Erreur, veuillez preciser un id de match."
+
+#: api/viewsAPI.py:224 api/viewsAPI.py:250
+msgid "Error match not found."
+msgstr "Aucun match récent trouvé"
+
+#: api/viewsAPI.py:238 api/viewsAPI.py:239
+#: frontend/templates/frontend/displayTournament.html:38
+#: frontend/templates/frontend/displayTournament.html:48
+#: frontend/templates/frontend/displayTournament.html:60
+#: frontend/templates/frontend/displayTournament.html:70
+msgid "Anonymous"
+msgstr "Anonyme"
+
+#: api/viewsUserManagement.py:37
+msgid "User is already logged in."
+msgstr "L'utilisateur.rice est déjà connecté.e."
+
+#: api/viewsUserManagement.py:44 api/viewsUserManagement.py:49
+#: api/viewsUserManagement.py:54
+msgid "Error wrong email or password."
+msgstr "Erreur, mauvais e-mail ou mot de passe."
+
+#: api/viewsUserManagement.py:71
+msgid ""
+"UserData is borked or database is offline, this is not supposed to happen."
+msgstr ""
+"Les données de l'utilisateur sont corrompues ou la base de données est hors "
+"ligne, cela ne devrait pas se produire."
+
+#: api/viewsUserManagement.py:75
+msgid "Error you are not logged in."
+msgstr "Erreur, vous n'êtes pas connecté.e."
+
+#: api/viewsUserManagement.py:79
+msgid "Error you must use the POST or GET method."
+msgstr "Erreur, vous devez utiliser la méthode POST ou GET."
+
+#: api/viewsUserManagement.py:93
+msgid "Error please add an username."
+msgstr "Erreur, veuillez ajouter un nom d'utilisateur.rice."
+
+#: api/viewsUserManagement.py:96 api/viewsUserManagement.py:232
+msgid "Error the username can't contain whitespaces."
+msgstr "Erreur, le nom d'utilisateur.rice ne peut pas contenir d'espaces."
+
+#: api/viewsUserManagement.py:99 api/viewsUserManagement.py:236
+msgid "Error the username is too long. The maximum length is 30 characters."
+msgstr ""
+"Erreur, le nom d'utilisateur.rice est trop long. La longueur maximale est de "
+"30 caractères."
+
+#: api/viewsUserManagement.py:106
+msgid "Error passwords diff."
+msgstr "Erreur, les mots de passe sont différents."
+
+#: api/viewsUserManagement.py:123
+msgid "Error this email is already taken."
+msgstr "Erreur, cette adresse courrielle est déjà prise."
+
+#: api/viewsUserManagement.py:140
+msgid "Error while creating new user."
+msgstr "Erreur lors de la création du nouvel utilisateur."
+
+#: api/viewsUserManagement.py:146
+msgid "Error you must POST the register form."
+msgstr "Erreur, vous devez soumettre le formulaire d'inscription."
+
+#: api/viewsUserManagement.py:154
+msgid "?error=Error invalid request method."
+msgstr "?erreur=Erreur, méthode de requête invalide."
+
+#: api/viewsUserManagement.py:157
+msgid "?error=Error you must be redirected by the 42 api."
+msgstr "?erreur=Erreur, vous devez être redirigé.e par l'API 42."
+
+#: api/viewsUserManagement.py:168
+msgid "?error=1Error while connecting to the 42 api."
+msgstr "?erreur=Erreur lors de la connexion à l'API 42."
+
+#: api/viewsUserManagement.py:172
+msgid "?error=Error handshake with the 42 api failed."
+msgstr "?erreur=Erreur, l'échange avec l'API 42 a échoué."
+
+#: api/viewsUserManagement.py:177
+msgid "?error=2Error while connecting to the 42 api."
+msgstr "?erreur=Erreur lors de la connexion à l'API 42."
+
+#: api/viewsUserManagement.py:181
+msgid "?error=Error while fetching infos from the 42 api."
+msgstr "?erreur=Erreur lors de la récupération des informations de l'API 42."
+
+#: api/viewsUserManagement.py:188
+msgid "Error your email is already linked to another account without 42 OAuth."
+msgstr "Erreur, votre e-mail est déjà lié à un autre compte sans OAuth 42."
+
+#: api/viewsUserManagement.py:200
+msgid "User in not logged."
+msgstr "L'utilisateur.rice n'est pas connecté.e."
+
+#: api/viewsUserManagement.py:204
+msgid "User successfully logged out."
+msgstr "Utilisateur.rice déconnecté.e avec succès."
+
+#: api/viewsUserManagement.py:216
+msgid "Error you must be logged in to modify your profile."
+msgstr "Erreur, vous devez être connecté.e pour modifier votre profil."
+
+#: api/viewsUserManagement.py:220 api/viewsUserManagement.py:267
+#: api/viewsUserManagement.py:312 api/viewsUserManagement.py:361
+#: api/viewsUserManagement.py:397
+msgid "Error you must use the POST method."
+msgstr "Erreur, vous devez utiliser la méthode POST."
+
+#: api/viewsUserManagement.py:228
+msgid "Error please enter a valid username."
+msgstr "Erreur, veuillez entrer un nom d'utilisateur valide."
+
+#: api/viewsUserManagement.py:263
+msgid "Error you must be logged in to delete your profile lol."
+msgstr "Erreur, vous devez être connecté.e pour modifier votre profil."
+
+#: api/viewsUserManagement.py:273
+msgid "Error please enter your username."
+msgstr "Erreur, veuillez entrer un nom d'utilisateur valide."
+
+#: api/viewsUserManagement.py:277
+msgid "Error wrong username."
+msgstr "Erreur, veuillez ajouter un nom d'utilisateur.rice."
+
+#: api/viewsUserManagement.py:286
+msgid "Error cannot delete user involved in a tournament in-progress."
+msgstr ""
+"Error vous ne pouvez supprimer un profil inscrit dans un tournoi en cours."
+
+#: api/viewsUserManagement.py:292
+#, fuzzy, python-brace-format
+#| msgid "Error while creating new user."
+msgid "Error while deleting the user please retry later. {e}"
+msgstr "Erreur lors de la création du nouvel utilisateur."
+
+#: api/viewsUserManagement.py:295
+msgid ""
+"User successfully deleted. You will be redirected to the main page in 3 "
+"seconds."
+msgstr ""
+"Profil supprimé avec succès, Vous allez être redirigé vers la page principale "
+"dans 3 secondes."
+
+#: api/viewsUserManagement.py:308 api/viewsUserManagement.py:357
+#: api/viewsUserManagement.py:393
+msgid "Error you must be logged in to send a friend request."
+msgstr "Erreur, vous devez être connecté.e pour modifier votre profil."
+
+#: api/viewsUserManagement.py:318 api/viewsUserManagement.py:323
+#: api/viewsUserManagement.py:367 api/viewsUserManagement.py:372
+#: api/viewsUserManagement.py:403 api/viewsUserManagement.py:408
+msgid "Error wrong user Id provided."
+msgstr "Erreur, mauvais e-mail ou mot de passe."
+
+#: api/viewsUserManagement.py:329
+msgid "Error you are already friend with this person."
+msgstr "Erreur vous êtes déjà ami avec cette personne"
+
+#: api/viewsUserManagement.py:333
+msgid "Error you already have sent a request to this person."
+msgstr "Erreur vous avez déjà envoyé une requête à cette personne"
+
+#: api/viewsUserManagement.py:341
+msgid "Friend successfully added."
+msgstr "Utilisateur.rice déconnecté.e avec succès."
+
+#: api/viewsUserManagement.py:346
+msgid "Friend request has been sent."
+msgstr "La demande d'ami a été envoyé"
+
+#: api/viewsUserManagement.py:350
+msgid "Error during friendship request, please retry later."
+msgstr "Erreur pendant l'envoi de demande d'ami, veuillez recommencer plus tard"
+
+#: api/viewsUserManagement.py:377
+msgid "Error friend request not found."
+msgstr "?erreur=Erreur, méthode de requête invalide."
+
+#: api/viewsUserManagement.py:381
+msgid "Friend request successfully deleted."
+msgstr "Utilisateur.rice déconnecté.e avec succès."
+
+#: api/viewsUserManagement.py:385
+msgid "Error unable to remove the friend request please retry later."
+msgstr "Erreur, vous n'avez pas pu supprimer la demande d'ami, veuillez recommencer plus tard"
+
+#: api/viewsUserManagement.py:415
+msgid "Error you are not friend with them."
+msgstr "Erreur, vous n'êtes pas connecté.e."
+
+#: api/viewsUserManagement.py:419
+msgid "Friendship successfully deleted."
+msgstr "Utilisateur.rice déconnecté.e avec succès."
+
+#: api/viewsUserManagement.py:423
+#, python-brace-format
+msgid "Error unable to remove friendship please retry later. {e}"
+msgstr "Erreur, vous n'avez pas pu supprimer cette amitié, veuillez recommencer plus tard"
+
+#: frontend/templates/frontend/baseTemplate.html:13
+msgid "pong with frenemies"
+msgstr "pong avec des ennemis"
+
+#: frontend/templates/frontend/baseTemplate.html:29
+msgid "search"
+msgstr "recherche"
+
+#: frontend/templates/frontend/baseTemplate.html:38
+msgid "play"
+msgstr "jouer"
+
+#: frontend/templates/frontend/baseTemplate.html:41
+#: frontend/templates/frontend/ladder.html:4
+msgid "ladder"
+msgstr "classement"
+
+#: frontend/templates/frontend/baseTemplate.html:44
+msgid "tournament"
+msgstr "Tournoi"
+
+#: frontend/templates/frontend/baseTemplate.html:47
+msgid "profile"
+msgstr "profil"
+
+#: frontend/templates/frontend/baseTemplate.html:50
+msgid "friend"
+msgstr "Ami"
+
+#: frontend/templates/frontend/baseTemplate.html:53
+msgid "logout"
+msgstr "Se deconnecter"
+
+#: frontend/templates/frontend/baseTemplate.html:62
+#: frontend/templates/frontend/register.html:64
+msgid "register"
+msgstr "s'inscrire"
+
+#: frontend/templates/frontend/baseTemplate.html:65
+#: frontend/templates/frontend/login.html:20
+msgid "login"
+msgstr "connexion"
+
+#: frontend/templates/frontend/baseTemplate.html:113
+msgid "GDPR contact"
+msgstr "Contact RGPD"
+
+#: frontend/templates/frontend/baseTemplate.html:129
+msgid "Cookies policy"
+msgstr "Gestion des témoins de connexion"
+
+#: frontend/templates/frontend/baseTemplate.html:130
+msgid ""
+"We use a single, essential cookie on this site that serves as a connection "
+"token to maintain your session. By clicking Accept, you acknowledge and "
+"consent to this cookie being stored in your browser."
+msgstr ""
+"Nous utilisons un seul et unique témoin de connexion, afin de garder votre "
+"session connectée. En cliquant Accepter, vous consentez a l'utilisation de "
+"ce témoin de connexion stocké dans votre navigateur."
+
+#: frontend/templates/frontend/baseTemplate.html:131
+msgid ""
+"For a popup-free browsing experience, you can permanently remove this notice "
+"by registering an account and accepting our Terms of Service."
+msgstr ""
+"Afin de jouir de ce site sans fenêtre surgissante, vous pouvez créer un "
+"compte en acceptant les conditions générales d'utilisation."
+
+#: frontend/templates/frontend/baseTemplate.html:133
+msgid "Accept"
+msgstr "Accepter"
+
+#: frontend/templates/frontend/createTournament.html:12
+msgid "Tournament creation:"
+msgstr "Création du tournoi:"
+
+#: frontend/templates/frontend/createTournament.html:17
+msgid "Tournament Name"
+msgstr "Nom du tournoi"
+
+#: frontend/templates/frontend/createTournament.html:18
+#, python-format
+msgid "%(username)s's tournament"
+msgstr "Tournoi de %(username)s"
+
+#: frontend/templates/frontend/createTournament.html:19
+msgid "Add a tournament name"
+msgstr "Ajoutez un nom de tournoi"
+
+#: frontend/templates/frontend/createTournament.html:27
+msgid "Auto register to the Tournament ?"
+msgstr "S'enregistrer automatiquement au tournoi ?"
+
+#: frontend/templates/frontend/createTournament.html:34
+msgid "Create Tournament"
+msgstr "Créer le tournoi"
+
+#: frontend/templates/frontend/displayTournament.html:12
+msgid "Go back"
+msgstr "Retour aux tournois"
+
+#: frontend/templates/frontend/displayTournament.html:19
+msgid "Delete tournament"
+msgstr "Supprimer le tournoi"
+
+#: frontend/templates/frontend/displayTournament.html:25
+msgid "Created by "
+msgstr "Créé par "
+
+#: frontend/templates/frontend/displayTournament.html:27
+msgid "The winner is: "
+msgstr "La personne gagnante est: "
+
+#: frontend/templates/frontend/displayTournament.html:34
+#: frontend/templates/frontend/displayTournament.html:44
+#: frontend/templates/frontend/displayTournament.html:56
+#: frontend/templates/frontend/displayTournament.html:66
+msgid "Slot"
+msgstr "Emplacement"
+
+#: frontend/templates/frontend/displayTournament.html:40
+#: frontend/templates/frontend/displayTournament.html:50
+#: frontend/templates/frontend/displayTournament.html:62
+#: frontend/templates/frontend/displayTournament.html:72
+msgid "Register"
+msgstr "S'enregistrer"
+
+#: frontend/templates/frontend/displayTournament.html:82
+msgid "Start Tournament"
+msgstr "Commencer Le Tournoi"
+
+#: frontend/templates/frontend/displayTournament.html:90
+msgid "Tournament is started, you can queue for the tournament in the "
+msgstr "Le tournoi est en cours vous pouvez y participer à cette "
+
+# msgid "Date"
+# msgstr "Date"
+#: frontend/templates/frontend/displayTournament.html:91
+msgid "Play"
+msgstr "page."
+
+#: frontend/templates/frontend/displayTournament.html:92
+msgid "page."
+msgstr " "
+
+#: frontend/templates/frontend/displayTournament.html:97
+msgid "Matches:"
+msgstr "Matchs récents:"
+
+#: frontend/templates/frontend/displayTournament.html:107
+#: frontend/templates/frontend/profile.html:93
+msgid "Date"
+msgstr "Date"
+
+# msgid "Date"
+# msgstr "Date"
+#: frontend/templates/frontend/displayTournament.html:108
+msgid "Player 1"
+msgstr "Joueur.euse un"
+
+#: frontend/templates/frontend/displayTournament.html:109
+msgid "Scores"
+msgstr "Scores"
+
+#: frontend/templates/frontend/displayTournament.html:110
+msgid "Player 2"
+msgstr "Joueur.euse deux"
+
+#: frontend/templates/frontend/displayTournament.html:111
+msgid "Winner"
+msgstr "Gagnant.e"
+
+#: frontend/templates/frontend/displayTournament.html:124
+msgid "No match found."
+msgstr "Aucun match récent trouvé"
+
+#: frontend/templates/frontend/displayTournament.html:130
+msgid ""
+"Unable to display matches when a user from a tournament has been deleted ."
+msgstr ""
+"Impossible d'afficher les matchs lorsque un utilisateur ayant participé au "
+"tournoi a supprimé son profil."
+
+#: frontend/templates/frontend/displayTournament.html:133
+msgid "Unable to retrive tournament data."
+msgstr "Impossible de récuperer les informations du tournoi."
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:3
+msgid "oops"
+msgstr "oups"
+
+#: frontend/templates/frontend/errorPageNotLoggedIn.html:4
+msgid "log-in to access this page"
+msgstr "connectez-vous pour accéder à cette page"
+
+#: frontend/templates/frontend/friend.html:12
+msgid "Online"
+msgstr "En ligne"
+
+#: frontend/templates/frontend/friend.html:15
+msgid "All"
+msgstr "Tous"
+
+#: frontend/templates/frontend/friend.html:18
+msgid "Pending"
+msgstr "En attente"
+
+#: frontend/templates/frontend/friend.html:36
+#: frontend/templates/frontend/profile.html:31
+msgid "Cancel Request"
+msgstr "Annuler la requête"
+
+#: frontend/templates/frontend/friend.html:40
+#: frontend/templates/frontend/profile.html:40
+msgid "Accept Request"
+msgstr "Accepter la requête"
+
+#: frontend/templates/frontend/friend.html:67
+#: frontend/templates/frontend/profile.html:22
+msgid "Remove Friend"
+msgstr "Supprimer l'ami"
+
+#: frontend/templates/frontend/friend.html:72
+msgid "Kinda empty here..."
+msgstr "C'est un peu vide par ici."
+
+#: frontend/templates/frontend/home.html:6
+msgid "news"
+msgstr "actualités"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Position"
+msgstr "Position"
+
+#: frontend/templates/frontend/ladder.html:8
+msgid "Pos"
+msgstr "Pos."
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Avatar"
+msgstr "Avatar"
+
+#: frontend/templates/frontend/ladder.html:9
+msgid "Ava."
+msgstr "Ava."
+
+#: frontend/templates/frontend/ladder.html:10
+msgid "Name"
+msgstr "Nom"
+
+# msgid "Date"
+# msgstr "Date"
+#: frontend/templates/frontend/ladder.html:11
+msgid "Played"
+msgstr "Matchs Joués"
+
+#: frontend/templates/frontend/ladder.html:11
+msgid "Pl"
+msgstr "MJ"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "Won"
+msgstr "Gagnés"
+
+#: frontend/templates/frontend/ladder.html:12
+msgid "W"
+msgstr "G"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "Lost"
+msgstr "Perdus"
+
+#: frontend/templates/frontend/ladder.html:13
+msgid "L"
+msgstr "P"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "Goals For"
+msgstr "Buts Pour"
+
+#: frontend/templates/frontend/ladder.html:14
+msgid "GF"
+msgstr "BP"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "Goals Against"
+msgstr "Buts Contre"
+
+#: frontend/templates/frontend/ladder.html:15
+msgid "GA"
+msgstr "BC"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "Goals Difference"
+msgstr "Différence de Buts"
+
+#: frontend/templates/frontend/ladder.html:16
+msgid "GD"
+msgstr "DB"
+
+#: frontend/templates/frontend/login.html:8
+msgid "E-mail"
+msgstr "E-mail"
+
+#: frontend/templates/frontend/login.html:10
+msgid "enter your email"
+msgstr "entrez votre e-mail"
+
+#: frontend/templates/frontend/login.html:13
+#: frontend/templates/frontend/register.html:22
+#: frontend/templates/frontend/updateProfile.html:48
+msgid "Password"
+msgstr "Mot de passe"
+
+#: frontend/templates/frontend/login.html:15
+msgid "enter your password"
+msgstr "entrez votre mot de passe"
+
+#: frontend/templates/frontend/login.html:22
+msgid "login with"
+msgstr "se connecter avec"
+
+#: frontend/templates/frontend/login.html:26
+#: frontend/templates/frontend/register.html:75
+msgid "reset"
+msgstr "réinitialiser"
+
+#: frontend/templates/frontend/match.html:20
+msgid "Player 1 not available"
+msgstr "Joueur.euse 1 non disponible"
+
+#: frontend/templates/frontend/match.html:25
+#: frontend/templates/frontend/match.html:48
+#: frontend/templates/frontend/profile.html:67
+msgid "Score"
+msgstr "Score"
+
+#: frontend/templates/frontend/match.html:44
+msgid "Player 2 not available"
+msgstr "Joueur.euse 2 non disponible"
+
+#: frontend/templates/frontend/match.html:55
+msgid " has won !"
+msgstr " a gagné !"
+
+#: frontend/templates/frontend/match.html:69
+msgid "Unable to retrieve match data"
+msgstr "Impossible de récupérer les données du match"
+
+#: frontend/templates/frontend/play.html:43
+msgid "Freeplay"
+msgstr "Jeu libre"
+
+#: frontend/templates/frontend/play.html:48
+msgid "Show tournaments"
+msgstr "Afficher les tournois"
+
+#: frontend/templates/frontend/play.html:66
+#: frontend/templates/frontend/tournament.html:30
+msgid "Created by: "
+msgstr "Créé par: "
+
+#: frontend/templates/frontend/play.html:68
+msgid "Enter tournament queue"
+msgstr "Entrer dans la file d'attente du tournoi"
+
+#: frontend/templates/frontend/play.html:73
+msgid "There are no tournaments available."
+msgstr "Vous n'êtes présentement dans aucun tournoi en cours."
+
+#: frontend/templates/frontend/profile.html:11
+#, python-format
+msgid "%(username)s's Profile"
+msgstr "Profil de %(username)s"
+
+#: frontend/templates/frontend/profile.html:15
+#: frontend/templates/frontend/updateProfile.html:12
+msgid "Edit Profile"
+msgstr "Modifier le profil"
+
+#: frontend/templates/frontend/profile.html:49
+msgid "Add Friend"
+msgstr "Ajouter en ami"
+
+#: frontend/templates/frontend/profile.html:64
+msgid "Statistics"
+msgstr "Statistiques"
+
+#: frontend/templates/frontend/profile.html:71
+msgid "Total matches"
+msgstr "Matchs totaux"
+
+#: frontend/templates/frontend/profile.html:75
+msgid "Win rate"
+msgstr "Taux de victoire"
+
+#: frontend/templates/frontend/profile.html:79
+msgid "Ladder position"
+msgstr "Position au classement"
+
+#: frontend/templates/frontend/profile.html:86
+msgid "Recent Matches"
+msgstr "Matchs récents"
+
+#: frontend/templates/frontend/profile.html:94
+msgid "Opponent"
+msgstr "Adversaire"
+
+#: frontend/templates/frontend/profile.html:95
+msgid "Your Score"
+msgstr "Votre score"
+
+#: frontend/templates/frontend/profile.html:96
+msgid "Opponent's Score"
+msgstr "Score de l'adversaire"
+
+#: frontend/templates/frontend/profile.html:97
+msgid "Result"
+msgstr "Résultat"
+
+#: frontend/templates/frontend/profile.html:109
+#: frontend/templates/frontend/profile.html:115
+msgid "Anon"
+msgstr "Anonyme"
+
+#: frontend/templates/frontend/profile.html:135
+msgid "Win"
+msgstr "Victoire"
+
+#: frontend/templates/frontend/profile.html:137
+msgid "Loss"
+msgstr "Défaite"
+
+#: frontend/templates/frontend/profile.html:143
+msgid "No recent matches found"
+msgstr "Aucun match récent trouvé"
+
+#: frontend/templates/frontend/register.html:8
+msgid "Account information"
+msgstr "Informations sur le compte"
+
+#: frontend/templates/frontend/register.html:10
+#: frontend/templates/frontend/updateProfile.html:34
+#: frontend/templates/frontend/updateProfile.html:87
+msgid "Username"
+msgstr "Nom d'utilisateur"
+
+#: frontend/templates/frontend/register.html:12
+msgid "Chose your username"
+msgstr "Choisissez votre nom d'utilisateur"
+
+#: frontend/templates/frontend/register.html:15
+#: frontend/templates/frontend/updateProfile.html:39
+msgid "Email"
+msgstr "E-mail"
+
+#: frontend/templates/frontend/register.html:17
+msgid "Input your Email"
+msgstr "Entrez votre e-mail"
+
+#: frontend/templates/frontend/register.html:24
+msgid "Input your password"
+msgstr "Entrez votre mot de passe"
+
+#: frontend/templates/frontend/register.html:27
+#: frontend/templates/frontend/register.html:29
+msgid "Verify your password"
+msgstr "Vérifiez votre mot de passe"
+
+#: frontend/templates/frontend/register.html:35
+#: frontend/templates/frontend/updateProfile.html:26
+msgid "Profile picture"
+msgstr "Photo de profil"
+
+#: frontend/templates/frontend/register.html:37
+#: frontend/templates/frontend/updateProfile.html:28
+msgid "Allowed formats: png, jpeg, jpg and gif"
+msgstr "Formats autorisés : png, jpeg, jpg et gif"
+
+#: frontend/templates/frontend/register.html:41
+msgid "Terms of Service (TOS)"
+msgstr "Conditions d'utilisation"
+
+#: frontend/templates/frontend/register.html:58
+msgid "I accept the terms of service"
+msgstr "J'accepte les conditions d'utilisation"
+
+#: frontend/templates/frontend/register.html:68
+msgid "register with"
+msgstr "s'inscrire avec"
+
+#: frontend/templates/frontend/register.html:72
+msgid "populate"
+msgstr "compléter"
+
+#: frontend/templates/frontend/tournament.html:12
+msgid "Opened"
+msgstr "Ouverts"
+
+#: frontend/templates/frontend/tournament.html:15
+msgid "In progress"
+msgstr "En cours"
+
+#: frontend/templates/frontend/tournament.html:18
+msgid "Closed"
+msgstr "Terminés"
+
+#: frontend/templates/frontend/tournament.html:21
+msgid "Create a tournament"
+msgstr "Créer un tournoi"
+
+#: frontend/templates/frontend/tournament.html:33
+msgid "closed"
+msgstr "fermé"
+
+#: frontend/templates/frontend/tournament.html:35
+msgid "in progress"
+msgstr "en cours"
+
+#: frontend/templates/frontend/tournament.html:37
+msgid "full"
+msgstr "plein"
+
+#: frontend/templates/frontend/tournament.html:39
+msgid " left"
+msgstr " libre.s"
+
+#: frontend/templates/frontend/tournament.html:46
+msgid "No tournament found."
+msgstr "Aucun tournoi trouvé."
+
+#: frontend/templates/frontend/updateProfile.html:15
+msgid "Go Back To Profile"
+msgstr "Retour au profil"
+
+#: frontend/templates/frontend/updateProfile.html:36
+msgid "Change your username"
+msgstr "Changer votre nom d'utilisateur"
+
+#: frontend/templates/frontend/updateProfile.html:41
+msgid "You can't change the email"
+msgstr "Vous ne pouvez pas changer l'e-mail"
+
+#: frontend/templates/frontend/updateProfile.html:50
+msgid "New password"
+msgstr "Nouveau mot de passe"
+
+#: frontend/templates/frontend/updateProfile.html:53
+msgid "Confirm password"
+msgstr "Confirmer le mot de passe"
+
+#: frontend/templates/frontend/updateProfile.html:55
+msgid "Confirm new password"
+msgstr "Confirmer le nouveau mot de passe"
+
+#: frontend/templates/frontend/updateProfile.html:61
+msgid "Update"
+msgstr "Mettre à jour"
+
+#: frontend/templates/frontend/updateProfile.html:67
+msgid "Delete Profile"
+msgstr "Supprimer le profil"
+
+#: frontend/templates/frontend/updateProfile.html:79
+msgid "Warning !"
+msgstr "Attention !"
+
+#: frontend/templates/frontend/updateProfile.html:83
+msgid "This action will delete all your user profile forever !"
+msgstr ""
+"La validation de ce formulaire va supprimer votre profil définitivement !"
+
+#: frontend/templates/frontend/updateProfile.html:86
+msgid ""
+"If you want to proced write your username below then click Delete my profile"
+msgstr ""
+"Si vous voulez continuer, écrivez votre nom d'utilisateur ci-dessous et "
+"cliquez sur: Supprimer mon profil"
+
+#: frontend/templates/frontend/updateProfile.html:92
+msgid "Close"
+msgstr "Annuler"
+
+#: frontend/templates/frontend/updateProfile.html:93
+msgid "Delete my profile"
+msgstr "Supprimer mon profil"
+
+#: frontend/templates/frontend/updateProfile.html:100
+msgid "Error"
+msgstr "Erreur"
+
+#: transcendence/settings.py:160
+msgid "english"
+msgstr "anglais"
+
+#: transcendence/settings.py:161
+msgid " 𓍑𓃏𓏎𓂝𓉣"
+msgstr ""
+
+#: transcendence/settings.py:162
+msgid "українська"
+msgstr ""
+
+#: transcendence/settings.py:163
+msgid "français"
+msgstr ""
+
+#: transcendence/settings.py:164
+msgid "ქართველი"
+msgstr ""
+
+#: websocket/gameLoop.py:293
+msgid "Match is starting get ready !"
+msgstr "Le match démarre tenez vous prêt.e"
+
+#: websocket/tournamentLoop.py:188
+msgid "Tournament is starting get ready !"
+msgstr "Le tournoi démarre tenez vous prêt.e"
+
+#: websocket/tournamentLoop.py:196
+msgid "A player has left the tournament."
+msgstr "Un.e joueur.euse a quitté le tournoi."
+
+#: websocket/tournamentLoop.py:202
+msgid "The two finalists are: "
+msgstr "Les deux finalistes sont :"
+
+#: websocket/tournamentLoop.py:212
+msgid "Too many players have left the tournament, no one have won."
+msgstr "Trop de joueurs.euses ont quitté le tournoi, personne n'a gagné"
+
+#: websocket/tournamentLoop.py:218
+msgid "The tournament winner is: "
+msgstr "Création du tournoi:"
+
+#~ msgid "Offline"
+#~ msgstr "Hors ligne"
+
+#~ msgid "Single Player"
+#~ msgstr "Jeu solo"
+
+#~ msgid "Multi Player"
+#~ msgstr "Multijoueur"
+
+#~ msgid "Normal PvP"
+#~ msgstr "PvP normal"
+
+#~ msgid "Ranked PvP"
+#~ msgstr "PvP classé"
+
+#~ msgid "Player Score Board"
+#~ msgstr "Tableau des scores des joueur.euses"
+
+#~ msgid "players"
+#~ msgstr "joueur.euse"
+
+#~ msgid "load more"
+#~ msgstr "charger plus"
+
+#~ msgid "Draw"
+#~ msgstr "Match nul"
+
+#~ msgid "Select your language"
+#~ msgstr "Sélectionnez votre langue"
+
+#~ msgid "Language"
+#~ msgstr "Langue"
+
+#~ msgid "ukrainian"
+#~ msgstr "ukrainien"
+
+#~ msgid "french"
+#~ msgstr "français"
+
+#~ msgid "georgian"
+#~ msgstr "géorgien"
+
+#~ msgid "simple english"
+#~ msgstr "anglais simple"

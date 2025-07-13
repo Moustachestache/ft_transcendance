@@ -1,0 +1,401 @@
+/* color palette
+from https://coolors.co/433a3f-3d5a6c-72a98f-8de969-cbef43 */
+
+/* *{
+    border: solid black 1px;
+    animation-duration: 3s;
+} */
+
+:root{
+    --color-1: #244aa5;
+    --color-2: #71aba8;
+    --color-3: #fff7d6;
+
+    --kosovo-1: var(--color-1);
+    --kosovo-2: #D0A650;
+
+    --primary-font: rgb(199, 214, 230);
+    --secondary-font: rgb(135, 151, 168);
+
+    --primary-dark-font: rgb(50, 52, 56);
+    --secondary-dark-font: rgb(75, 88, 100);
+}
+
+@font-face {
+    font-family: 'ProtestRevolution';
+    src: local('/static/fonts/ProtestRevolution-Regular.ttf'), url('/static/fonts/ProtestRevolution-Regular.ttf') format("truetype");
+}
+
+html
+{
+    height: 100%;
+}
+
+body
+{
+    background-color: #D3C2B0;
+    color: var(--primary-font);
+    height: 100%;
+    font-family: "ProtestRevolution";
+}
+
+a
+{
+    color: var(--color-3);
+    text-decoration: underline;
+}
+
+a:hover
+{
+    color: var(--color-2) !important;
+    text-shadow: 0 1px 0 var(black);
+}
+
+/* animation */
+.animate
+{
+    transition: 0.2s;
+}
+
+/* navbar and topmenu */
+#nav
+{
+    background-color: var(--kosovo-1);
+    color: var(--primary-font);
+    box-shadow: 0 6px 6px -6px black;
+}
+
+#nav-title a
+{
+    text-decoration: none;
+    margin: 1em 0;
+}
+
+#nav-search-result
+{
+    position: absolute;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-search-input:focus
+{
+    border: 1px solid var(--color-3);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#nav-profile-username
+{
+    overflow-x: clip;
+}
+
+.pointer-hover:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.nav-profile-42logo
+{
+    margin-right: 10px;
+    height: 20px;
+    filter: invert();
+}
+
+#nav-profile-img
+{
+    width: 100%;
+    object-fit: fill;
+}
+
+#content
+{
+    color: var(--primary-dark-font);
+    margin: 1em 0;
+    border: 5px black;
+}
+
+#content a
+{
+    color: var(--color-1);
+}
+
+#error-wrap
+{
+    height: auto;
+}
+
+#error-wrap a
+{
+    font-weight: bolder;
+    text-decoration: none;
+    color: red;
+    display: block;
+}
+
+#footer
+{
+    box-shadow: 0 6px 6px -6px goldenrod;
+    padding: 1em 0;
+    background-color: var(--kosovo-2);
+    color: var(--secondary-dark-font);
+    text-align: center;
+}
+
+#footer-partners
+{
+    max-width: 200px;
+    margin: auto;
+}
+
+#footer-partners img
+{
+    margin-top: 1em;
+}
+
+/* flag wrapper in footer */
+#flag-wrap a
+{
+    display: block;
+}
+
+.news-text
+{
+    border-top: solid 1px var(--color-1);
+}
+
+.link-light
+{
+    color: white !important;
+}
+
+.wrap {
+    width: 100%;
+
+    }
+
+.match-sep{
+    height: 1px;
+    width: auto;
+    background-color: black;
+}
+
+.match-pic{
+    aspect-ratio: 1 / 1;
+    width: 64px;
+    height: 64px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.gray-background{
+    background-color: lightgray;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.text-shrink{
+    overflow: hidden;
+}
+
+.border-gameboard {
+    border: 7px solid #93BACB;
+}
+
+.bg-gameboard {
+    background-color: #93BACB;
+}
+
+.playerScoreBoard {
+    width: 100%;
+    height: 100%;
+    max-width: 342px;
+    max-height: 500px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.pongStyle {
+    width: 100%;
+    height: 100%;
+    max-width: 950px;
+    max-height: 500px;
+
+    flex-direction: column;
+    visibility: visible;
+}
+
+#pong {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pongCanvas {
+    width: 100%;
+    height: 100%;
+    max-width: 900px;
+    max-height: 400px;
+}
+
+#pongCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.linechart-container{
+    position: relative;
+    width: 70vw;
+    height: 30vh;
+    min-height: 250px;
+    min-width: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.doughnutchart-container{
+    position: relative;
+    width: 50vw;
+    height: 50vh;
+    min-height: 150px;
+    min-width: 150px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-tournament{
+    background-color: #244aa5;
+    border-color: #244aa5;
+    color: white;
+}
+
+.btn-select{
+    border-color: #244aa5;
+    color: #244aa5;
+}
+
+.bg-xs-red{
+    background-color: red;
+}
+
+@media only screen and (min-width : 320px) {
+    #nav-profile-content
+    {
+        color: var(--primary-dark-font);
+        background-color: transparent;
+    }
+
+    #nav-profile-content:hover{
+        opacity: 80%;
+        color: var(--primary-dark-font);
+        background-color: transparent;
+        cursor: pointer;
+    }
+}
+
+@media only screen and (min-width : 576px) {
+    #nav-profile-content
+    {
+        color: var(--primary-dark-font);
+        background-color: white;
+    }
+
+    #nav-profile-content:hover{
+        opacity: 80%;
+        color: var(--primary-dark-font);
+        background-color: white;
+        cursor: pointer;
+    }
+}
+
+/* NOT WORKING (Tournament page)
+.btn-select:hover > .btn-select{
+    border-color: #244aa5;
+    color: #244aa5;
+}
+
+.btn-select:checked > .btn-select{
+    border-color: #244aa5;
+    --bs-btn-active-bg: #244aa5;
+    --bs-btn-active-border-color: #244aa5;
+    background-color: #244aa5 !important;
+    color: #244aa5;
+} */
+
+.onlineDot, .offlineDot{
+	margin-left: 5px;
+	height: 10px;
+	width: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.onlineDot {
+	background-color: green;
+  }
+
+.offlineDot{
+	background-color: Gray;
+}
+
+/* game display and canvas */
+
+.button-play
+{
+    z-index:1;
+}
+
+.button-tournament
+{
+    background-color: #283E4C;
+}
+
+#tournament_wrapper
+{
+    opacity: 0;
+    height: 0px;
+}
+
+#gameCanvasWrapper
+{
+    padding: 0;
+}
+
+canvas
+{
+    display: block;
+}
+
+#pongCanvasGame
+{
+
+    background-image: url("/static/Pong_field.png");
+    background-position: center center;
+    background-size: cover;
+    border: 2px black solid;
+}
+
+#pongScoreboard
+{
+    opacity: 0;
+    height: 0px;
+    background-color: white;
+}
+
+#scorePlayer1
+{
+    text-align: left;
+}
+
+#scorePlayer2
+{
+    text-align: right;
+}

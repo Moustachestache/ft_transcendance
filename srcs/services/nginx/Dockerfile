@@ -1,0 +1,22 @@
+
+FROM nginx:stable-alpine3.20-perl
+
+COPY conf/default.conf /etc/nginx/conf.d/default.conf
+
+RUN     apk update ; apk upgrade ; \
+        apk add --no-cache \
+        openssl
+
+RUN     mkdir -p /etc/nginx ; \
+        mkdir -p /etc/nginx/ssl ; \
+        openssl req -newkey rsa:4096 -x509 -sha256 -days 365 -nodes \
+                    -out /etc/nginx/ssl/ssl.crt \
+                    -keyout /etc/nginx/ssl/ssl.key \
+                    -subj "/C=FR/ST=PO/L=Perpignan/O=42/OU=42/CN=localhost/UID=mjodiaremllyot"
+
+
+EXPOSE 80
+
+EXPOSE 8433
+
+CMD ["nginx", "-g", "daemon off;"]

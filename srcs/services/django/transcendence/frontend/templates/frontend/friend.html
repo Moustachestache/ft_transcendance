@@ -1,0 +1,80 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+
+<div class="row align-items-center rounded-5" style="background-image: url('{% static "Avatar_world_map_opacity_max.jpg" %}');
+background-size: cover;
+background-position: top;>
+    <div class="row align-items-center py-3 gray-background" >
+
+        <div class="btn-group p-3" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" {% if listType != "all" and listType != "pending" %} checked {% else %} {% endif %}>
+            <label class="btn btn-outline-primary btn-select text-white" onclick="loadPage('friend')" for="btnradio1">{% translate 'Online' %}</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" {% if listType == 'all' %} checked {% else %} {% endif %}>
+            <label class="btn btn-outline-primary btn-select text-white" for="btnradio2" onclick="loadPage('friend', 'list=all')" >{% translate 'All' %}</label>
+
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" {% if listType == 'pending' %} checked {% else %} {% endif %}>
+            <label class="btn btn-outline-primary btn-select text-white" for="btnradio3" onclick="loadPage('friend', 'list=pending')">{% translate 'Pending' %}</label>
+        </div>
+		{% if nodes and listType == "pending" %}
+			<div class="list-group list-group-numbered p-3">
+				<form id="pendingForm" method="POST" >
+				{% csrf_token %}
+				<ul class="list-group">
+			{% for node in nodes %}
+					<li class="list-group-item d-flex justify-content-between align-items-center rounded-5">
+						{% if node.profile_pic %}
+						<img class="img-thumbnail rounded-circle pointer-hover" onclick="loadPage('profile', 'userId={{ node.id }}')" src="/media/{{ node.profile_pic }}" style="width: 50px; height: 50px;">
+						{% else %}
+						<img class="img-thumbnail rounded-circle pointer-hover" onclick="loadPage('profile', 'userId={{ node.id }}')" src="{% static 'profileDefault.png' %}" style="width: 50px; height: 50px;" >
+						{% endif %}
+						<span>{{ node.username }}</span>
+						
+						{% if node.isSender %}
+						<button class="btn btn-danger rounded-5" type="button" onclick="deleteFriendRequest(document.getElementById('pendingForm'), '{{ node.id }}')">
+							<i class="bi bi-x-circle-fill"></i> {% translate 'Cancel Request' %}
+						</button>
+						{% else %}
+						<button class="btn btn-success rounded-5" type="button" onclick="sendFriendRequest(document.getElementById('pendingForm'), '{{ node.id }}')">
+							<i class="bi bi-person-check-fill"></i> {% translate 'Accept Request' %}
+						</button>
+						{% endif %}
+					</li>
+					{% empty %}
+					Nothing to list
+				</ul>
+				</form>
+			</div>
+			{% endfor %}
+		{% else %}
+			<div class="list-group list-group-numbered p-3">
+				<form id="pendingForm" method="POST" >
+				{% csrf_token %}
+				<ul class="list-group">
+					{% for node in nodes %}
+					<li class="list-group-item d-flex justify-content-between align-items-center rounded-5">
+						<div class="d-flex justify-content-between align-items-center">
+							{% if node.profile_pic %}
+							<img class="img-thumbnail rounded-circle pointer-hover" onclick="loadPage('profile', 'userId={{ node.id }}')" src="/media/{{ node.profile_pic }}" style="width: 50px; height: 50px;">
+							{% else %}
+							<img class="img-thumbnail rounded-circle pointer-hover" onclick="loadPage('profile', 'userId={{ node.id }}')" src="{% static 'profileDefault.png' %}" style="width: 50px; height: 50px;" >
+							{% endif %}
+							<span class="{% if node.isOnline %}onlineDot{% else %}offlineDot{% endif %}">
+						</div>
+						<span>{{ node.username }}</span>
+						<button class="btn btn-danger rounded-5" type="button" onclick="deleteFriendship(document.getElementById('pendingForm'), '{{ node.id }}')">
+							<i class="bi bi-person-dash-fill"></i> {% translate 'Remove Friend' %}
+						</button>
+					</li>
+					{% empty %}
+					<div class="text-white text-center">
+						{% translate 'Kinda empty here...' %}
+					</div>
+				</ul>
+				</form>
+			</div>
+			{% endfor %}
+		{% endif %}
+    </div>
+</div>

@@ -1,0 +1,25 @@
+{% load static %}
+{% include 'frontend/jsProtection.html' %}
+
+<h1>search</h1>
+{% if dbRequest %}
+{% for items in dbRequest %}
+    <div class="row align-items-center m-3 p-1 gray-background" onclick="loadPage('profile', 'userId={{ items.id }}')">
+        <div class="col-2">
+            {% if items.picture %}
+                <img class="img-thumbnail" src="/media/{{ items.picture }}"/>
+            {% else %}
+                <img class="img-thumbnail" src="{% static 'profileDefault.png' %}"/>
+            {% endif %}
+        </div>
+        <div class="col">
+            {{ items.username }}
+        </div>
+        <div class="col">
+            {{ items.id }}
+        </div>
+    </div>
+{% endfor %}
+{% else %}
+<h2>no results</h2>
+{% endif %}

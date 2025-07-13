@@ -1,0 +1,28 @@
+### CONTAINS ALL THE NEEDED PYTHON LIBS ###
+### VERSIONS ARE THE LASTEST ATM ###
+
+# WEBSERV #
+
+django==5.1.2
+django-cleanup==9.0.0
+gunicorn==23.0.0
+uvicorn[standard]==0.34.0
+uvicorn-worker==0.3.0
+daphne==4.1.2
+channels==4.2.2
+channels_redis==4.2.1
+django-request-logging==0.7.5 
+
+# POSTGRESQL #
+
+psycopg2==2.9.10
+psycopg2-binary==2.9.10
+
+# UTILS #
+
+tzdata==2024.2
+Pillow==11.0.0
+requests==2.32.3
+python-gettext==5.0
+elasticsearch==9.0.1
+python-logstash==0.4.8

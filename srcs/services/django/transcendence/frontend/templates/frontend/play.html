@@ -1,0 +1,85 @@
+{% load static %}
+{% load i18n %}
+{% include 'frontend/jsProtection.html' %}
+<!-- <div>
+    // controles et info
+    <button id="wowie" onclick="tournamentLoading('kikou')">draw test</button>
+    <button id="startgame" onclick="stopPong()">stop game</button>
+    <button id="matchmakingBtn" onclick="startMatchmaking()" >Enter Matchmaking</button>
+	<button id="quitMatchmakingBtn" onclick="leaveMatchmaking()" style="display: none; color: red;">Quit matchmaking</button>
+</div> -->
+<div>
+    <div class="animate container text-center rounded-top py-3" id="pongScoreboard">
+        <div class="row">
+            <div class="col-6 col-lg-3 order-lg-1" id="scoreboardPlayer1">
+                <img id ="imgPlayer1" class="mx-auto img-fluid d-block" src="/static/profileDefault.png">
+                <span id="usernamePlayer1" class="fs-3 word-wrap text-break"></span>
+            </div>
+            <div class="col-6 col-lg-3 order-lg-3" id="scoreboardPlayer2">
+                <img id ="imgPlayer2" class="mx-auto img-fluid d-block" src="/static/profileDefault.png">
+                <span id="usernamePlayer2" class="fs-3 word-wrap text-break"></span>
+            </div>
+            <div class="col-12 col-lg-6 order-lg-2">
+                <div class="row" id="scoreboardScore">
+                    <div class="col display-3 align-middle pt-5" id="scorePlayer1">
+                        0
+                    </div>
+                    <div class="col display-1" id="scoreboardTime">
+                        2:00
+                    </div>
+                    <div class="col display-3 align-middle pt-5" id="scorePlayer2">
+                        0
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="gameCanvasWrapper">
+        <canvas id="pongCanvasGame" width="800px" height="600px"></canvas>
+    </div>
+    <div class="row">
+        <div class="d-lg-none d-lg-none text-center p-3">
+            <div class="col-sm d-grid row p-1">
+                <a class="btn btn-primary btn-lg button-play" onmousedown="gameInfo.player._paddle.paddleMoveup()" onmouseup="gameInfo.player._paddle.stopPaddleMoveup()" ontouchstart="gameInfo.player._paddle.paddleMoveup()" ontouchend="gameInfo.player._paddle.stopPaddleMoveup()">⬆️</a>
+            </div>
+            <div class="col-sm d-grid row p-1">
+                <a class="btn btn-lg button-play pt-1" onmousedown="gameInfo.player._paddle.paddleMovedown()" onmouseup="gameInfo.player._paddle.stopPaddleMovedown()" ontouchstart="gameInfo.player._paddle.paddleMovedown()" ontouchend="gameInfo.player._paddle.stopPaddleMovedown()" style="background-color: #283E4C;">⬇️</a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm d-grid">
+            <button type="button" class="btn btn-light btn-lg button-play" type="button" onclick="pageButtonFreeplay()">
+                {% translate "Freeplay" %}
+            </button>
+        </div>
+        <div class="col-sm d-grid">
+            <button type="button" class="btn btn-secondary btn-lg button-tournament" type="button" data-bs-toggle="collapse" data-bs-target="tournament_wrapper" onclick="pageButtonTournament()">
+                {% translate "Show tournaments" %}
+                {% if tournaments %}
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success">
+                {{ tournaments|length }}
+                    <span class="visually-hidden">tournaments available</span>
+                </span>
+                {% endif %}
+            </button>
+        </div>
+    </div>
+</div>
+<div id="tournament_wrapper" class="animate align-items-center">
+{% if tournaments %}
+    <ol class="list-group list-group-numbered p-3">
+    {% for tournament in tournaments %}
+    <li class="list-group-item d-flex justify-content-between align-items-start">
+        <div class="ms-2 me-auto">
+            <div class="fw-bold">{{ tournament.title }}</div>
+            {% translate 'Created by: ' %}{{ tournament.creator.username }}
+        </div>
+        <button data-bs-toggle="button" class="align-middle btn btn-outline-primary" onclick="startTournament('{{ tournament.id }}'); pageButtonTournament()">{% translate 'Enter tournament queue' %}</button>
+    </li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <h3>{% trans "There are no tournaments available." %}</h3>
+{% endif %}
+</div>
